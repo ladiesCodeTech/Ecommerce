@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ladiescode/screens/home/components/body.dart';
 import 'package:ladiescode/size_config.dart';
-import 'package:ladiescode/widgets/HomeBottomNavBar.dart';
+import 'package:ladiescode/widgets/BottomNavBar.dart';
 import 'package:ladiescode/screens/home/components/HomeAppBar.dart';
 
 class HomeScreen extends StatelessWidget {

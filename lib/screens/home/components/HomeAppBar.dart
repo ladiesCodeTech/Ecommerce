@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:ladiescode/size_config.dart';
 
 class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Size get preferredSize => Size.fromHeight(100.0);
 
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
+
     return AppBar(
       backgroundColor: Colors.white,
       elevation: 1,
@@ -13,7 +16,8 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
         children: [
           // Local da logo
           Container(
-              padding: EdgeInsets.only(bottom: 10),
+              padding:
+                  EdgeInsets.only(bottom: getProportionateScreenHeight(10)),
               child: Text(
                 'Ladies.com',
                 style: TextStyle(
@@ -24,8 +28,10 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
 
           Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 15),
-              padding: EdgeInsets.symmetric(horizontal: 15),
+              margin: EdgeInsets.symmetric(
+                  horizontal: getProportionateScreenWidth(15)),
+              padding: EdgeInsets.symmetric(
+                  horizontal: getProportionateScreenWidth(15)),
               height: 30,
               decoration: BoxDecoration(
                 color: Color(0xFFE6E6E6),
@@ -35,7 +41,9 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
                 children: [
                   // barra de pesquisa
                   Container(
-                    margin: EdgeInsets.only(left: 5, bottom: 5),
+                    margin: EdgeInsets.only(
+                        left: getProportionateScreenWidth(5),
+                        bottom: getProportionateScreenWidth(5)),
                     height: 30,
                     width: 240,
                     child: TextFormField(
@@ -54,7 +62,7 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.only(right: 15),
+              margin: EdgeInsets.only(right: getProportionateScreenWidth(15)),
               child: Icon(
                 Icons.shopping_bag_outlined,
                 size: 30,

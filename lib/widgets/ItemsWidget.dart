@@ -31,6 +31,7 @@ class ItemsWidget extends StatelessWidget {
                     alignment: Alignment.topRight,
                     child: InkWell(
                       borderRadius: BorderRadius.circular(20),
+                      // criar mudança de estado ao clicar, add ou remover de favoritos
                       onTap: () {},
                       child: Container(
                         width: 20,

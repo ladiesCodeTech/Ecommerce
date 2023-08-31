@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ladiescode/widgets/HomeBottomNavBar.dart';
+import 'package:ladiescode/widgets/BottomNavBar.dart';
 
 class CategoriesScreen extends StatelessWidget {
   @override

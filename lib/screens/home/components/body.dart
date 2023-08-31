@@ -21,7 +21,7 @@ class Body extends StatelessWidget {
           child: Text(
             'Categorias',
             style: TextStyle(
-              fontSize: 16,
+              fontSize: 18,
               fontWeight: FontWeight.bold,
             ),
           ),
