@@ -1,7 +1,8 @@
+//Página Favoritos
 import 'package:flutter/material.dart';
-import 'package:ladiescode/widgets/HomeBottomNavBar.dart';
+import 'package:ladiescode/widgets/BottomNavBar.dart';
 
-class CategoriesScreen extends StatelessWidget {
+class FavouriteScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +25,7 @@ class CategoriesScreen extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.only(left: 5),
                   child: Text(
-                    'Categorias',
+                    'Favoritos',
                     style: TextStyle(
                         fontSize: 23,
                         fontWeight: FontWeight.bold,

@@ -1,3 +1,4 @@
+//Página home, conteúdo da logo, barra de buscar, icone sacola de compras e pesquisar
 import 'package:flutter/material.dart';
 
 class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -6,34 +7,29 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xFFFFFFFF),
       elevation: 1,
       flexibleSpace: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          // Local da logo
-          Container(
-              padding: EdgeInsets.only(bottom: 10),
-              child: Text(
-                'Ladies.com',
-                style: TextStyle(
-                    color: Color(0xFFB6082F),
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold),
-              )),
-
+          //Imagem da Logo
+          Image.asset(
+            'images/logo.png',
+            fit: BoxFit.contain,
+            height: 40,
+          ),
+          //Conteúdo dentro da barra de buscar
           Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
             Container(
               margin: EdgeInsets.symmetric(horizontal: 15),
               padding: EdgeInsets.symmetric(horizontal: 15),
               height: 30,
               decoration: BoxDecoration(
-                color: Color(0xFFE6E6E6),
+                color: Color(0xFFF1F1F1),
                 borderRadius: BorderRadius.circular(30),
               ),
               child: Row(
                 children: [
-                  // barra de pesquisa
                   Container(
                     margin: EdgeInsets.only(left: 5, bottom: 5),
                     height: 30,
@@ -42,7 +38,7 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
                       decoration: InputDecoration(
                           border: InputBorder.none,
                           hintText: 'Buscar em Ladies.com',
-                          fillColor: Color(0xFFE6E6E6)),
+                          fillColor: Color(0xFFF1F1F1)),
                     ),
                   ),
                   Icon(

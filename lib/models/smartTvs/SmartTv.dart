@@ -1,4 +1,5 @@
-import 'package:ladiescode/models/products_list.dart';
+//Tela listagem de produtos SmartTvs
+import 'package:ladiescode/models/ProductsList.dart';
 
 class TvProduct extends Product {
   TvProduct({
@@ -18,6 +19,7 @@ class TvProduct extends Product {
         );
 
   static List<Product> tvProducts = [
+    //SmartTv 1
     TvProduct(
       images: 'images/smartTvs/1.png',
       title:
@@ -28,7 +30,7 @@ class TvProduct extends Product {
       isFavourite: true,
     ),
 
-    // TV 2
+    //SmartTv 2
     TvProduct(
       images: 'images/smartTvs/2.png',
       title: 'Smart TV 32” HD D-LED AOC 32S5135/78G VA - Wi-Fi 3 HDMI 1 USB',
@@ -37,7 +39,8 @@ class TvProduct extends Product {
       rating: 3,
       isFavourite: false,
     ),
-    // TV 3
+
+    //SmartTv 3
     TvProduct(
       images: 'images/smartTvs/3.png',
       title:
@@ -47,7 +50,8 @@ class TvProduct extends Product {
       rating: 3,
       isFavourite: true,
     ),
-    // TV 4
+
+    //SmartTv 4
     TvProduct(
       images: 'images/smartTvs/4.png',
       title: 'Smart TV 32” HD LED Semp R6500 Wi-Fi - 3 HDMI 1 USB',
@@ -56,7 +60,8 @@ class TvProduct extends Product {
       rating: 3,
       isFavourite: false,
     ),
-    // TV 5
+
+    //SmartTv 5
     TvProduct(
       images: 'images/smartTvs/5.png',
       title:
@@ -66,7 +71,8 @@ class TvProduct extends Product {
       rating: 5,
       isFavourite: false,
     ),
-    // TV 6
+
+    //SmartTv 6
     TvProduct(
       images: 'images/smartTvs/6.png',
       title:

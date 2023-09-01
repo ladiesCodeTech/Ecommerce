@@ -1,6 +1,7 @@
+//Página home, conteúdo para exibir todos os produtos
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:ladiescode/models/products_list.dart';
+import 'package:ladiescode/models/ProductsList.dart';
 import 'package:ladiescode/size_config.dart';
 
 class ItemsWidget extends StatelessWidget {
@@ -14,7 +15,7 @@ class ItemsWidget extends StatelessWidget {
       children: [
         for (int i = 0; i < allProducts.length; i++)
 
-          // Fazer o container todo ser clicavel
+          //Permite clicks no container
           InkWell(
             onTap: () {
               Navigator.pushNamed(context, 'itemScreen');
@@ -26,7 +27,7 @@ class ItemsWidget extends StatelessWidget {
                   color: Colors.white, borderRadius: BorderRadius.circular(20)),
               child: Column(
                 children: [
-                  // ícone de favorito
+                  //Ícone favorito
                   Container(
                     alignment: Alignment.topRight,
                     child: InkWell(
@@ -37,8 +38,8 @@ class ItemsWidget extends StatelessWidget {
                         height: 20,
                         decoration: BoxDecoration(
                             color: allProducts[i].isFavourite
-                                ? Color(0xFFFFEEED) // se true
-                                : Color(0xFFF4F4F4), // se false
+                                ? Color(0xFFFFEEED) //true
+                                : Color(0xFFF4F4F4), //false
                             shape: BoxShape.circle),
                         child: Icon(
                           allProducts[i].isFavourite
@@ -46,8 +47,8 @@ class ItemsWidget extends StatelessWidget {
                               : Icons.favorite_border,
                           size: 15,
                           color: allProducts[i].isFavourite
-                              ? Color(0xFFFF5261) // se true
-                              : Color(0xFF201A1A), // se false
+                              ? Color(0xFFFF5261) //true
+                              : Color(0xFF201A1A), //false
                         ),
                       ),
                     ),
@@ -62,7 +63,7 @@ class ItemsWidget extends StatelessWidget {
                     ),
                   ),
 
-                  // Título
+                  // Título do produto
                   Container(
                     padding: EdgeInsets.only(
                         bottom: getProportionateScreenHeight(5)),
@@ -74,7 +75,7 @@ class ItemsWidget extends StatelessWidget {
                     ),
                   ),
 
-                  // Preço
+                  // Preço do produto
                   Container(
                     padding: EdgeInsets.only(
                         bottom: getProportionateScreenHeight(3)),
@@ -88,7 +89,7 @@ class ItemsWidget extends StatelessWidget {
                     ),
                   ),
 
-                  // Pagamento
+                  //Formas de Pagamento do produto
                   Container(
                     padding: EdgeInsets.only(
                         bottom: getProportionateScreenHeight(5)),

@@ -1,5 +1,6 @@
+//Página perfil do usuario
 import 'package:flutter/material.dart';
-import 'package:ladiescode/widgets/HomeBottomNavBar.dart';
+import 'package:ladiescode/widgets/BottomNavBar.dart';
 
 class ProfileScreen extends StatelessWidget {
   @override
@@ -7,7 +8,7 @@ class ProfileScreen extends StatelessWidget {
     return Scaffold(
       body: ListView(children: [
         Container(
-            color: Colors.white,
+            color: Color(0xFFFFFFFF),
             padding: EdgeInsets.all(25),
             child: Row(
               children: [

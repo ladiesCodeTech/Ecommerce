@@ -1,4 +1,6 @@
+//Página listagem de produto selecionado
 import 'package:flutter/material.dart';
+import 'package:ladiescode/widgets/BottomNavBar.dart';
 
 class ItemScreen extends StatelessWidget {
   @override
@@ -6,7 +8,7 @@ class ItemScreen extends StatelessWidget {
     return Scaffold(
       body: ListView(children: [
         Container(
-            color: Colors.white,
+            color: Color(0xFFFFFFFF),
             padding: EdgeInsets.all(25),
             child: Row(
               children: [
@@ -23,7 +25,7 @@ class ItemScreen extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.only(left: 5),
                   child: Text(
-                    'Produto',
+                    'Produtos',
                     style: TextStyle(
                         fontSize: 23,
                         fontWeight: FontWeight.bold,
@@ -33,6 +35,7 @@ class ItemScreen extends StatelessWidget {
               ],
             ))
       ]),
+      bottomNavigationBar: HomeBottomNavBar(),
     );
   }
 }

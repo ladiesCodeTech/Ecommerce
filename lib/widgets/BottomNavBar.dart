@@ -1,3 +1,4 @@
+//Página home, icones da barra de navegação parte inferior.
 import 'package:flutter/material.dart';
 
 class HomeBottomNavBar extends StatelessWidget {
@@ -12,7 +13,7 @@ class HomeBottomNavBar extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            // Home
+            //Home
             IconButton(
                 onPressed: () {
                   Navigator.pushNamed(context, '/');
@@ -22,7 +23,7 @@ class HomeBottomNavBar extends StatelessWidget {
                   color: Color(0xFFB6082F),
                 )),
 
-            // Categorias
+            //Categorias
             IconButton(
                 onPressed: () {
                   Navigator.pushNamed(context, 'categoriesScreen');
@@ -32,7 +33,7 @@ class HomeBottomNavBar extends StatelessWidget {
                   color: Color(0xFFB6082F),
                 )),
 
-            // Favoritos
+            //Favoritos
             IconButton(
                 onPressed: () {
                   Navigator.pushNamed(context, 'favouriteScreen');
@@ -42,7 +43,7 @@ class HomeBottomNavBar extends StatelessWidget {
                   color: Color(0xFFB6082F),
                 )),
 
-            // Perfil
+            //Perfil
             IconButton(
                 onPressed: () {
                   Navigator.pushNamed(context, 'profileScreen');
