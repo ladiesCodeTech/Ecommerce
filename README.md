@@ -67,13 +67,13 @@ flutter run
 	<td align="center" valign="top">  <a href="https://github.com/GrasieleRocha"> <img src="https://avatars.githubusercontent.com/u/104076058?v=4" width="115" alt="Grasiele Miranda Rocha"/>
           <br /> <p>Grasiele</p> </a>
       </td>
-	<td align="center" valign="top">  <a href="https://github.com/marianadefatima"> <img src="https://media.licdn.com/dms/image/D4D35AQGYPvjnQxfP8Q/profile-framedphoto-shrink_200_200/0/1685641957133?e=1693839600&v=beta&t=hXchct-r-7oOTqqDbrtprbgz-kE13fmnQbhJrLZM2Jg" width="115" alt="Mariana de Fátima"/>
+	<td align="center" valign="top">  <a href="https://github.com/marianadefatima"> <img src="https://media.licdn.com/dms/image/C5603AQG9hobE51dOSw/profile-displayphoto-shrink_800_800/0/1644498366716?e=1698883200&v=beta&t=dJ6NoQvv8NnYUNTXlVRB7Zm5pRNb8pHTUKtTLd-TmIg" width="115" alt="Mariana de Fátima"/>
           <br /> <p>Mariana</p> </a>
       </td>
 	    <td align="center" valign="top">  <a href="https://github.com/polysaantana"> <img src="https://avatars.githubusercontent.com/u/138715912?v=4" width="115" alt="Polyanna Santana"/>
           <br /> <p>Polyanna</p> </a>
       </td>
-	<td align="center" valign="top">  <a href="https://github.com/divina37"> <img src="https://avatars.githubusercontent.com/u/130809132?v=4" width="115" alt="Divina"/>
+	<td align="center" valign="top">  <a href="https://github.com/divina37"> <img src="https://media.licdn.com/dms/image/C4E03AQHZKCkTQNWTxQ/profile-displayphoto-shrink_800_800/0/1584478149317?e=1698883200&v=beta&t=6v3F9ccN6hytUW2RP-Z8WZf34_Y1OeDkvteDm9e6Jj8" width="115" alt="Divina"/>
           <br /> <p>Divina</p> </a>
       </td>
     </tr>
