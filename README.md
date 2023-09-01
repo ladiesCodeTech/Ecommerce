@@ -26,7 +26,7 @@ O aplicativo oferece acesso fácil a uma variedade de eletroeletrônicos, smartT
 
 ### Ferramentas utilizadas: 
 
-* Figman
+* Figma
 
 * Trello
 
