@@ -1,4 +1,5 @@
 //Página home, icones da barra de navegação parte inferior.
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ladiescode/size_config.dart';
 
@@ -7,7 +8,7 @@ class HomeBottomNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return BottomAppBar(
       color: Colors.white,
-      elevation: 0,
+      elevation: 1,
       padding:
           EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(25)),
       child: Container(
@@ -31,7 +32,7 @@ class HomeBottomNavBar extends StatelessWidget {
                   Navigator.pushNamed(context, 'categoriesScreen');
                 },
                 icon: Icon(
-                  Icons.sort,
+                  CupertinoIcons.list_bullet,
                   color: Color(0xFFB6082F),
                 )),
 

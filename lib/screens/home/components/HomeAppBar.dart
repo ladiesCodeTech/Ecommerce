@@ -1,4 +1,5 @@
 //Página home, conteúdo da logo, barra de buscar, icone sacola de compras e pesquisar
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ladiescode/size_config.dart';
 
@@ -66,7 +67,7 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
                   Container(
                     // margin: EdgeInsets.only(right: 15),
                     child: Icon(
-                      Icons.shopping_bag_outlined,
+                      CupertinoIcons.cart,
                       size: getProportionateScreenHeight(30),
                       color: Color(0xFFB6082F),
                     ),

@@ -9,54 +9,15 @@ class ItemScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return Scaffold(
+      // Appbar - barra de navegação superior
       appBar: CustomAppBar(),
 
-      // appBar: AppBar(
-      //   backgroundColor: Colors.white,
-      //   leading: IconButton(
-      //     onPressed: () {
-      //       Navigator.pop(context);
-      //     },
-      //     icon: Icon(Icons.arrow_back_ios),
-      //     color: Color(0xFFB6082F),
-      //   ),
-      //   actions: [
-      //     IconButton(
-      //         onPressed: () {},
-      //         icon: Icon(Icons.shopping_cart),
-      //         color: Color(0xFFB6082F))
-      //   ],
-      // ),
+      // Body - página de descrição do produto
+      body: SafeArea(
+        child: SingleChildScrollView(),
+      ),
 
-      // body: ListView(children: [
-      //   Container(
-      //       color: Color(0xFFFFFFFF),
-      //       padding: EdgeInsets.all(25),
-      //       child: Row(
-      //         children: [
-      //           InkWell(
-      //             onTap: () {
-      //               Navigator.pop(context);
-      //             },
-      //             child: Icon(
-      //               Icons.arrow_back_ios,
-      //               size: 30,
-      //               color: Color(0xFFB6082F),
-      //             ),
-      //           ),
-      //           Padding(
-      //             padding: EdgeInsets.only(left: 5),
-      //             child: Text(
-      //               'Produtos',
-      //               style: TextStyle(
-      //                   fontSize: 23,
-      //                   fontWeight: FontWeight.bold,
-      //                   color: Color(0xFFB6082F)),
-      //             ),
-      //           ),
-      //         ],
-      //       ))
-      // ]),
+      // NavBar - barra de navegação inferior
       bottomNavigationBar: HomeBottomNavBar(),
     );
   }

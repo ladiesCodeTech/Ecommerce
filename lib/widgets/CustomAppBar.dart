@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ladiescode/size_config.dart';
 
@@ -7,6 +8,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: Colors.white,
+      elevation: 1,
       leading: IconButton(
         onPressed: () {
           Navigator.pop(context);
@@ -17,7 +19,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       actions: [
         IconButton(
             onPressed: () {},
-            icon: Icon(Icons.shopping_cart),
+            icon: Icon(CupertinoIcons.cart),
             color: Color(0xFFB6082F))
       ],
     );
