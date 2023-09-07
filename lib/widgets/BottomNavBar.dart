@@ -1,5 +1,6 @@
 //Página home, icones da barra de navegação parte inferior.
 import 'package:flutter/material.dart';
+import 'package:ladiescode/size_config.dart';
 
 class HomeBottomNavBar extends StatelessWidget {
   @override
@@ -7,9 +8,10 @@ class HomeBottomNavBar extends StatelessWidget {
     return BottomAppBar(
       color: Colors.white,
       elevation: 0,
-      padding: EdgeInsets.symmetric(horizontal: 25),
+      padding:
+          EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(25)),
       child: Container(
-        height: 70,
+        height: getProportionateScreenHeight(70),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
