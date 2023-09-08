@@ -5,7 +5,8 @@ import 'package:ladiescode/models/smartphones/Smartphone.dart';
 
 
 class Product {
-  final String title, images, payments;
+  final String title, payments;
+  final List<String> images;
   final double rating, price;
   final bool isFavourite;
 

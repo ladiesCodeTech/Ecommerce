@@ -87,7 +87,7 @@ class SmartphoneCatScreen extends StatelessWidget {
                               width: getProportionateScreenWidth(150),
                               child: AspectRatio(
                                 aspectRatio: 1.2,
-                                child: Image.asset(smartphoneProducts[i].images),
+                                child: Image.asset(smartphoneProducts[i].images[0]),
                               ),
                             ),
 

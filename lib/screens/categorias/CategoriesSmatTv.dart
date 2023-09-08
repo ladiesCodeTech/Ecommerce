@@ -13,18 +13,21 @@ class TvCatScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: InkWell(
-            onTap: () {
-              Navigator.pop(context);
-            },
-           child: Icon(
+          onTap: () {
+            Navigator.pop(context);
+          },
+          child: Icon(
             Icons.arrow_back_ios,
             size: 30,
             color: Color(0xFFB6082F),
           ),
-          ),
+        ),
         title: Text(
           'SmartTVs',
-          style: TextStyle(fontWeight: FontWeight.bold, color: Color(0xFFB6082F),),
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: Color(0xFFB6082F),
+          ),
         ),
         backgroundColor: Color(0xFFFFFFFF),
       ),
@@ -88,7 +91,7 @@ class TvCatScreen extends StatelessWidget {
                               width: getProportionateScreenWidth(150),
                               child: AspectRatio(
                                 aspectRatio: 1.2,
-                                child: Image.asset(tvProducts[i].images),
+                                child: Image.asset(tvProducts[i].images[0]),
                               ),
                             ),
 

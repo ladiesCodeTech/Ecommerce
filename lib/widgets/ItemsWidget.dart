@@ -59,7 +59,7 @@ class ItemsWidget extends StatelessWidget {
                     width: getProportionateScreenWidth(150),
                     child: AspectRatio(
                       aspectRatio: 1.2,
-                      child: Image.asset(allProducts[i].images),
+                      child: Image.asset(allProducts[i].images[0]),
                     ),
                   ),
 
