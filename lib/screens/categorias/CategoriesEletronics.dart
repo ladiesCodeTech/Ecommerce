@@ -2,10 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:ladiescode/models/ProductsList.dart';
 import 'package:ladiescode/size_config.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:ladiescode/widgets/BottomNavBar.dart';
 import 'package:ladiescode/widgets/CustomAppBar.dart';
-import 'package:ladiescode/widgets/ItemsWidget.dart';
 import 'package:ladiescode/widgets/ProductCard.dart';
 
 class EletronicCatScreen extends StatelessWidget {
