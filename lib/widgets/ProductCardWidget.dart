@@ -10,18 +10,18 @@ class ProductCard extends StatelessWidget {
     this.width = 150,
     this.aspectRatio = 1.2,
     required this.product,
+    required this.press,
   });
 
   final double width, aspectRatio;
   final Product product;
+  final VoidCallback press;
 
   @override
   Widget build(BuildContext context) {
     //Permite clicks no container
-    return InkWell(
-      onTap: () {
-        Navigator.pushNamed(context, 'itemScreen');
-      },
+    return GestureDetector(
+      onTap: press,
       child: Container(
         padding: EdgeInsets.only(left: 15, right: 15, top: 10),
         margin: EdgeInsets.symmetric(vertical: 8, horizontal: 10),

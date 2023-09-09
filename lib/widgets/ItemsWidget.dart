@@ -2,7 +2,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:ladiescode/models/ProductsList.dart';
-import 'package:ladiescode/widgets/ProductCard.dart';
+import 'package:ladiescode/screens/item/ItemScreen.dart';
+import 'package:ladiescode/widgets/ProductCardWidget.dart';
 
 class ItemsWidget extends StatelessWidget {
   @override
@@ -18,6 +19,14 @@ class ItemsWidget extends StatelessWidget {
           allProducts.length,
           (index) => ProductCard(
             product: allProducts[index],
+            press: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => ItemScreen(
+                            product: allProducts[index],
+                          )));
+            },
           ),
         )
       ],

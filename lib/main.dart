@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
       //Rotas das páginas
       routes: {
         '/': (context) => HomeScreen(),
-        'itemScreen': (context) => ItemScreen(),
+        // 'itemScreen': (context) => ItemScreen(product: [null],),
         'categoriesScreen': (context) => CategoriesScreen(),
         'favouriteScreen': (context) => FavouriteScreen(),
         'profileScreen': (context) => ProfileScreen(),

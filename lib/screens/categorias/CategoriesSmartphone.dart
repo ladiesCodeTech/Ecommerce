@@ -1,10 +1,11 @@
 //Listar apenas a categoria smartphone
 import 'package:flutter/material.dart';
 import 'package:ladiescode/models/ProductsList.dart';
+import 'package:ladiescode/screens/item/ItemScreen.dart';
 import 'package:ladiescode/size_config.dart';
 import 'package:ladiescode/widgets/BottomNavBar.dart';
 import 'package:ladiescode/widgets/CustomAppBar.dart';
-import 'package:ladiescode/widgets/ProductCard.dart';
+import 'package:ladiescode/widgets/ProductCardWidget.dart';
 
 class SmartphoneCatScreen extends StatelessWidget {
   @override
@@ -28,8 +29,17 @@ class SmartphoneCatScreen extends StatelessWidget {
                   // Gerar lista com todos os produtos da categoria Smartphones
                   ...List.generate(
                       smartphoneProducts.length,
-                      (index) =>
-                          ProductCard(product: smartphoneProducts[index]))
+                      (index) => ProductCard(
+                            product: smartphoneProducts[index],
+                            press: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => ItemScreen(
+                                            product: smartphoneProducts[index],
+                                          )));
+                            },
+                          ))
                 ],
               ),
             ],
