@@ -23,8 +23,8 @@ class MyApp extends StatelessWidget {
           scaffoldBackgroundColor: Color(0xFFF1F1F1),
           textTheme: TextTheme(
             bodySmall: TextStyle(color: Color(0xFF201A1A)),
-            bodyMedium: TextStyle(color: Color(0xFF201A1A)), 
-            bodyLarge: TextStyle(color: Color(0xFF201A1A)), 
+            bodyMedium: TextStyle(color: Color(0xFF201A1A)),
+            bodyLarge: TextStyle(color: Color(0xFF201A1A)),
           )),
 
       //Rotas das páginas

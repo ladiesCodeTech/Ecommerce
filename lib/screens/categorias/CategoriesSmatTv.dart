@@ -4,6 +4,7 @@ import 'package:ladiescode/models/ProductsList.dart';
 import 'package:ladiescode/size_config.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:ladiescode/widgets/BottomNavBar.dart';
+import 'package:ladiescode/widgets/CustomAppBar.dart';
 
 class TvCatScreen extends StatelessWidget {
   @override
@@ -11,26 +12,7 @@ class TvCatScreen extends StatelessWidget {
     SizeConfig().init(context);
 
     return Scaffold(
-      appBar: AppBar(
-        leading: InkWell(
-          onTap: () {
-            Navigator.pop(context);
-          },
-          child: Icon(
-            Icons.arrow_back_ios,
-            size: 30,
-            color: Color(0xFFB6082F),
-          ),
-        ),
-        title: Text(
-          'SmartTVs',
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            color: Color(0xFFB6082F),
-          ),
-        ),
-        backgroundColor: Color(0xFFFFFFFF),
-      ),
+      appBar: CustomAppBar(title: 'SmartTVs',),
 
       //Lista com todos os produtos da categoria
       body: SafeArea(

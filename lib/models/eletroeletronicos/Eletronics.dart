@@ -5,6 +5,7 @@ class EletronicProduct extends Product {
   EletronicProduct({
     required List<String> images,
     required String title,
+    required String description,
     required double price,
     required String payments,
     double rating = 0.0,
@@ -12,6 +13,7 @@ class EletronicProduct extends Product {
   }) : super(
           images: images,
           title: title,
+          description: description,
           price: price,
           payments: payments,
           rating: rating,
@@ -23,6 +25,7 @@ class EletronicProduct extends Product {
     EletronicProduct(
       images: ['images/eletronics/1.webp'],
       title: 'Babá Eletrônica COMFORT VM85 CONNECT LCD 5.0 Wi-Fi Motorola',
+      description: '##Adicionar descrição do produto##',
       price: 1619.10,
       payments: 'No Pix ou no Cartão de crédito R\$ 49.90',
       rating: 5,
@@ -33,6 +36,7 @@ class EletronicProduct extends Product {
     EletronicProduct(
       images: ['images/eletronics/2.webp'],
       title: 'Repelente Eletrônico Ultrassônico - Chicco',
+      description: '##Adicionar descrição do produto##',
       price: 48.90,
       payments: 'No Pix ou no Cartão de crédito R\$ 49,90 ',
       rating: 3,
@@ -44,6 +48,7 @@ class EletronicProduct extends Product {
       images: ['images/eletronics/3.webp'],
       title:
           'Purificador de água Consul CPB34ASVNA Refrigeração Eletrônica com Filtragem Classe A, Branco Bivolt',
+      description: '##Adicionar descrição do produto##',
       price: 499.90,
       payments: 'no Pix ou R\$ 499,90 em 10x de R\$ 49,99 sem juros',
       rating: 4,
@@ -54,6 +59,7 @@ class EletronicProduct extends Product {
     EletronicProduct(
       images: ['images/eletronics/4.webp'],
       title: 'Cabo Adaptador OTG Tipo-C Usb C Compatível Samsung Pen Drive',
+      description: '##Adicionar descrição do produto##',
       price: 8.96,
       payments: 'No Pix e no cartão de crédito',
       rating: 5,
@@ -63,7 +69,9 @@ class EletronicProduct extends Product {
     //Eletroeletronicos 5
     EletronicProduct(
       images: ['images/eletronics/5.webp'],
-      title: 'Câmera Baba Eletrônica Visão Noturna sem fio com Microfone 3 Antenas HD - YOUSEE',
+      title:
+          'Câmera Baba Eletrônica Visão Noturna sem fio com Microfone 3 Antenas HD - YOUSEE',
+      description: '##Adicionar descrição do produto##',
       price: 127.90,
       payments: 'No Pix ou R\$ 127,90 em 2x de R\$ 63,95 sem juros',
       rating: 3,
@@ -73,7 +81,9 @@ class EletronicProduct extends Product {
     //Eletroeletronicos 6
     EletronicProduct(
       images: ['images/eletronics/6.webp'],
-      title: 'Esteira Eletrônica Dream Fitness Concept 1600 - Dobrável Vel. Máxima 9km/h',
+      title:
+          'Esteira Eletrônica Dream Fitness Concept 1600 - Dobrável Vel. Máxima 9km/h',
+      description: '##Adicionar descrição do produto##',
       price: 1599.90,
       payments: 'no Pix ou R\$ 1.599,90 em 10x de R\$ 159,99 sem juros',
       rating: 5,

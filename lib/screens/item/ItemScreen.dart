@@ -11,7 +11,7 @@ class ItemScreen extends StatelessWidget {
     SizeConfig().init(context);
     return Scaffold(
       // Appbar - barra de navegação superior
-      appBar: CustomAppBar(),
+      appBar: CustomAppBar(title: '',),
 
       // Body - página de descrição do produto
       body: CustomItemsBody(),

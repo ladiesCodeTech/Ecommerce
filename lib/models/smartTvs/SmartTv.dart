@@ -5,6 +5,7 @@ class TvProduct extends Product {
   TvProduct({
     required List<String> images,
     required String title,
+    required String description,
     required double price,
     required String payments,
     double rating = 0.0,
@@ -12,6 +13,7 @@ class TvProduct extends Product {
   }) : super(
           images: images,
           title: title,
+          description: description,
           price: price,
           payments: payments,
           rating: rating,
@@ -28,6 +30,7 @@ class TvProduct extends Product {
       ],
       title:
           'Smart TV 32” HD LED TCL S615 VA 60Hz - Android Wi-Fi e Bluetooth Google Assistente 2 HDMI',
+      description: '##Adicionar descrição do produto##',
       price: 1127.15,
       payments: 'no Pix ou em 8x de R\$ 149,89 sem juros',
       rating: 2,
@@ -42,6 +45,7 @@ class TvProduct extends Product {
         'images/smartTvs/3.png',
       ],
       title: 'Smart TV 32” HD D-LED AOC 32S5135/78G VA - Wi-Fi 3 HDMI 1 USB',
+      description: '##Adicionar descrição do produto##',
       price: 1091.09,
       payments: 'no Pix ou em 8x de R\$ 149,88 sem juros',
       rating: 3,
@@ -57,6 +61,7 @@ class TvProduct extends Product {
       ],
       title:
           'Smart TV 43” 4K LED TCL 43P635 VA Wi-Fi - Bluetooth HDR Google Assistente 3 HDMI 1 USB',
+      description: '##Adicionar descrição do produto##',
       price: 1756.55,
       payments: 'no Pix ou em 10x de R\$ 184,90 sem juros',
       rating: 3,
@@ -71,6 +76,7 @@ class TvProduct extends Product {
         'images/smartTvs/3.png',
       ],
       title: 'Smart TV 32” HD LED Semp R6500 Wi-Fi - 3 HDMI 1 USB',
+      description: '##Adicionar descrição do produto##',
       price: 1091.09,
       payments: 'no Pix ou em 8x de R\$ 149,88 sem juros',
       rating: 3,
@@ -86,6 +92,7 @@ class TvProduct extends Product {
       ],
       title:
           'Smart TV LG 65” 4K Quantum Dot NanoCell 65QNED80 120Hz FreeSync HDMI 2.1 ThinQ',
+      description: '##Adicionar descrição do produto##',
       price: 7029.05,
       payments: 'no Pix ou em 10x de R\$ 739,90 sem juros',
       rating: 5,
@@ -101,6 +108,7 @@ class TvProduct extends Product {
       ],
       title:
           'Smart TV LG 55” 4K NanoCell 55NANO75 Inteligência Artificial AI ThinQ Smart Magic Google Alexa',
+      description: '##Adicionar descrição do produto##',
       price: 2799.00,
       payments: 'no Pix ou em 10x de R\$ 279,90 sem juros',
       rating: 4,

@@ -4,6 +4,7 @@ import 'package:ladiescode/models/ProductsList.dart';
 import 'package:ladiescode/size_config.dart';
 import 'package:ladiescode/widgets/BottomNavBar.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:ladiescode/widgets/CustomAppBar.dart';
 
 class SmartphoneCatScreen extends StatelessWidget {
   @override
@@ -11,23 +12,8 @@ class SmartphoneCatScreen extends StatelessWidget {
     SizeConfig().init(context);
 
     return Scaffold(
-      appBar: AppBar(
-        leading: InkWell(
-            onTap: () {
-              Navigator.pop(context);
-            },
-            child: Icon(
-            Icons.arrow_back_ios,
-            size: 30,
-            color: Color(0xFFB6082F),
-          ),
-          ),
-        title: Text(
-          'Smartphones',
-          style: TextStyle(fontWeight: FontWeight.bold, color: Color(0xFFB6082F),),
-        ),
-        backgroundColor: Color(0xFFFFFFFF),
-      ),
+      appBar: CustomAppBar(title: 'Smartphones'),
+
       //Lista com todos os produtos da categoria
       body: SafeArea(
         child: SingleChildScrollView(
@@ -87,7 +73,8 @@ class SmartphoneCatScreen extends StatelessWidget {
                               width: getProportionateScreenWidth(150),
                               child: AspectRatio(
                                 aspectRatio: 1.2,
-                                child: Image.asset(smartphoneProducts[i].images[0]),
+                                child: Image.asset(
+                                    smartphoneProducts[i].images[0]),
                               ),
                             ),
 

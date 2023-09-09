@@ -9,7 +9,7 @@ class CategoriesWidget extends StatelessWidget {
       {'icon': Icons.tv, 'text': 'SmartTVs', 'route': 'tvCatScreen'},
       {
         'icon': Icons.phone_iphone,
-        'text': 'Celulares',
+        'text': 'Smartphones',
         'route': 'smartphoneCatScreen'
       },
       {

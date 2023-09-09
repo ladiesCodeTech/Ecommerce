@@ -3,8 +3,17 @@ import 'package:flutter/material.dart';
 import 'package:ladiescode/size_config.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
+  const CustomAppBar({
+    super.key,
+    required this.title,
+  });
+
+  final title;
+
   @override
   Size get preferredSize => Size.fromHeight(getProportionateScreenHeight(50));
+
+  @override
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: Colors.white,
@@ -15,6 +24,10 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         },
         icon: Icon(Icons.arrow_back_ios),
         color: Color(0xFFB6082F),
+      ),
+      title: Text(
+        title,
+        style: TextStyle(color: Color(0xFFB6082F), fontWeight: FontWeight.bold),
       ),
       actions: [
         IconButton(
