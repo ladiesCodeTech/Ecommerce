@@ -31,6 +31,7 @@ class CategoriesScreen extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                         color: Color(0xFFB6082F)),
                   ),
+                  
                 ),
               ],
             )),
