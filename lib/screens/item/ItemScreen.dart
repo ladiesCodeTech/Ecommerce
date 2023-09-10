@@ -21,32 +21,10 @@ class ItemScreen extends StatelessWidget {
       ),
 
       // Body - página de descrição do produto
-      body: SafeArea(
-        child: Column(
-          children: [
-            Container(
-              padding: EdgeInsets.symmetric(
-                  horizontal: getProportionateScreenWidth(15)),
-              width: double.infinity,
-              color: Colors.white,
-              child: SizedBox(
-                height: getProportionateScreenHeight(200),
-                child: AspectRatio(
-                    aspectRatio: 1, child: Image.asset(product.images[0])),
-              ),
-            ),
-          ],
-        ),
-      ),
+      body: CustomItemsBody(product: product),
 
       // NavBar - barra de navegação inferior
       bottomNavigationBar: HomeBottomNavBar(),
     );
   }
 }
-
-// class ProductDetailsArguments {
-//   final Product product;
-
-//   ProductDetailsArguments({required this.product});
-// }

@@ -5,7 +5,6 @@ import 'package:ladiescode/screens/categorias/CategoriesSmartphone.dart';
 import 'package:ladiescode/screens/categorias/CategoriesSmatTv.dart';
 import 'package:ladiescode/screens/favoritos/FavouritesScreen.dart';
 import 'package:ladiescode/screens/home/HomeScreen.dart';
-import 'package:ladiescode/screens/item/ItemScreen.dart';
 import 'package:ladiescode/screens/profile/ProfileScreen.dart';
 
 void main() {
@@ -30,7 +29,6 @@ class MyApp extends StatelessWidget {
       //Rotas das páginas
       routes: {
         '/': (context) => HomeScreen(),
-        // 'itemScreen': (context) => ItemScreen(product: [null],),
         'categoriesScreen': (context) => CategoriesScreen(),
         'favouriteScreen': (context) => FavouriteScreen(),
         'profileScreen': (context) => ProfileScreen(),
