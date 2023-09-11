@@ -14,7 +14,7 @@ class HomeScreen extends StatelessWidget {
       appBar: HomeAppBar(),
       //Lista o conteúdo das categorias e todos os produtos
       body: Body(),
-      
+
       bottomNavigationBar: HomeBottomNavBar(),
     );
   }
