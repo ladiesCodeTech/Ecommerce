@@ -14,6 +14,46 @@ class CustomItemsBody extends StatelessWidget {
     this.paymentMethods = '',
   });
 
+  void openDescriptionModal(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text("Descrição do produto"),
+          content: Text("Here goes the description of the product."),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: Text("Close"),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  void openRatingModal(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text("Avaliação do produto"),
+          content: Text("Here goes the rating section."),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: Text("Close"),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -110,7 +150,7 @@ class CustomItemsBody extends StatelessWidget {
               height: 53,
               child: ElevatedButton(
                 onPressed: () {
-                  // Perform "Avaliação do produto" action here
+                  openDescriptionModal(context);
                 },
                 style: ElevatedButton.styleFrom(
                   primary: Colors.white,
@@ -142,7 +182,7 @@ class CustomItemsBody extends StatelessWidget {
               height: 53,
               child: ElevatedButton(
                 onPressed: () {
-                  // Perform "Avaliação do produto" action here
+                  openRatingModal(context);
                 },
                 style: ElevatedButton.styleFrom(
                   primary: Colors.white,
@@ -155,7 +195,7 @@ class CustomItemsBody extends StatelessWidget {
                   children: [
                     Text(
                       'Avaliação do produto',
-                      style: TextStyle(
+style: TextStyle(
                         fontSize: 16,
                         color: Color.fromARGB(255, 88, 88, 88),
                       ),
