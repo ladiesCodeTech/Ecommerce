@@ -20,40 +20,64 @@ class _CustomItemsBodyState extends State<CustomItemsBody> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Column(
-        children: [
-          Container(
-            padding: EdgeInsets.all(getProportionateScreenWidth(15)),
-            width: double.infinity,
-            color: Colors.white,
-            child: SizedBox(
-              height: getProportionateScreenHeight(200),
-              child: AspectRatio(
-                  aspectRatio: 1,
-                  child: PageView.builder(
-                      itemCount: widget.product.images.length,
-                      onPageChanged: (value) {
-                        setState(() {
-                          _currentPage = value;
-                        });
-                      },
-                      itemBuilder: (context, index) =>
-                          Image.asset(widget.product.images[index]))),
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            // Imagens dos produtos
+            Container(
+              padding: EdgeInsets.all(getProportionateScreenWidth(15)),
+              width: double.infinity,
+              color: Colors.white,
+              child: SizedBox(
+                height: getProportionateScreenHeight(200),
+                child: AspectRatio(
+                    aspectRatio: 1,
+                    child: PageView.builder(
+                        itemCount: widget.product.images.length,
+                        onPageChanged: (value) {
+                          setState(() {
+                            _currentPage = value;
+                          });
+                        },
+                        itemBuilder: (context, index) =>
+                            Image.asset(widget.product.images[index]))),
+              ),
             ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(top: getProportionateScreenHeight(10)),
-          ),
-          Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: List.generate(widget.product.images.length,
-                  (index) => DotBuilder(isActive: index == _currentPage))),
-        ],
+            Padding(
+              padding: EdgeInsets.only(top: getProportionateScreenHeight(10)),
+            ),
+            Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: List.generate(widget.product.images.length,
+                    (index) => DotBuilder(isActive: index == _currentPage))),
+
+            // Padding para iniciar o título
+            Padding(
+                padding:
+                    EdgeInsets.only(top: getProportionateScreenHeight(10))),
+
+            Container(
+              padding: EdgeInsets.all(getProportionateScreenWidth(16)),
+              child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'title',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ]),
+            )
+          ],
+        ),
       ),
     );
   }
 }
 
+// Classe para construir as bolinhas de navegação da imagem
 class DotBuilder extends StatelessWidget {
   const DotBuilder({
     super.key,
