@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ladiescode/models/ProductsList.dart';
 import 'package:ladiescode/size_config.dart';
+import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
 class CustomItemsBody extends StatefulWidget {
   const CustomItemsBody({
@@ -61,13 +62,37 @@ class _CustomItemsBodyState extends State<CustomItemsBody> {
               child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      'title',
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
+                    Padding(
+                      padding: EdgeInsets.only(
+                          bottom: getProportionateScreenHeight(10)),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            widget.product.title,
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Container(
+                            padding: EdgeInsets.only(
+                                bottom: getProportionateScreenHeight(5)),
+                            alignment: Alignment.centerLeft,
+                            child: RatingBarIndicator(
+                              rating: widget.product.rating,
+                              itemBuilder: (context, index) => Icon(
+                                Icons.star,
+                                color: Color(0xFFB6082F),
+                              ),
+                              itemCount: 5,
+                              itemSize: 12,
+                              direction: Axis.horizontal,
+                            ),
+                          )
+                        ],
                       ),
-                    ),
+                    )
                   ]),
             )
           ],
