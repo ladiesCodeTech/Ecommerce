@@ -3,8 +3,8 @@ import 'package:ladiescode/models/ProductsList.dart';
 import 'package:ladiescode/size_config.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
-class CustomItemsBody extends StatefulWidget {
-  const CustomItemsBody({
+class ImageCarosel extends StatefulWidget {
+  const ImageCarosel({
     super.key,
     required this.product,
   });
@@ -12,10 +12,10 @@ class CustomItemsBody extends StatefulWidget {
   final Product product;
 
   @override
-  State<CustomItemsBody> createState() => _CustomItemsBodyState();
+  State<ImageCarosel> createState() => _ImageCaroselState();
 }
 
-class _CustomItemsBodyState extends State<CustomItemsBody> {
+class _ImageCaroselState extends State<ImageCarosel> {
   int _currentPage = 0;
 
   @override
