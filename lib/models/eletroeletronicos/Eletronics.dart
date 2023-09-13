@@ -91,3 +91,4 @@ class EletronicProduct extends Product {
     ),
   ];
 }
+ 

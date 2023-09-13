@@ -1,4 +1,3 @@
-//Página listagem de produto selecionado
 import 'package:flutter/material.dart';
 import 'package:ladiescode/models/ProductsList.dart';
 import 'package:ladiescode/screens/item/components/BodyBuilder.dart';
