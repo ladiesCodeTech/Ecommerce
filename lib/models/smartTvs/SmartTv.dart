@@ -27,7 +27,7 @@ class TvProduct extends Product {
       title:
           'Smart TV 32” HD LED TCL S615 VA 60Hz - Android Wi-Fi e Bluetooth Google Assistente 2 HDMI',
       description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod velit id ex suscipit, a venenatis tellus elementum. Vivamus auctor quam nec justo faucibus, in volutpat augue iaculis. Sed ac dui quis nulla sodales tincidunt. Sed sit amet luctus metus. Sed euismod quam eget lorem sollicitudin, ut pharetra ex ultricies. Aenean gravida velit id odio condimentum, non posuere nisl ultrices. Pellentesque efficitur quam vitae augue ullamcorper, sit amet bibendum est suscipit. Sed id cursus elit. Fusce et metus nec elit ultrices bibendum. Maecenas dapibus sed nisi vel varius. Vestibulum et risus at nisl vehicula vehicula.',
+          'A SMART TV LED 32" TCL HDR 32S615 2 HDMI é um modelo da marca TCL. As 32.0" dessa TV HD possui tecnologia LED e conta com Android. A taxa de atualização dessa TV TCL 32S615 é de 60Hz. Quanto ao áudio, a potência deste aparelho é de 16W. A TCL 32S615 conta com as entradas Fone de Ouvido P2, HDMI, LAN (Rede), USB, HDMI ARC e também tem Bluetooth, Espelhamento de Tela, Wi-Fi integrado',
       price: 1127.15,
       payments: 'no Pix ou em 8x de R\$ 149,89 sem juros',
       rating: 2,
@@ -39,7 +39,7 @@ class TvProduct extends Product {
       images: ['images/smartTvs/2.png'],
       title: 'Smart TV 32” HD D-LED AOC 32S5135/78G VA - Wi-Fi 3 HDMI 1 USB',
       description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod velit id ex suscipit, a venenatis tellus elementum. Vivamus auctor quam nec justo faucibus, in volutpat augue iaculis. Sed ac dui quis nulla sodales tincidunt. Sed sit amet luctus metus. Sed euismod quam eget lorem sollicitudin, ut pharetra ex ultricies. Aenean gravida velit id odio condimentum, non posuere nisl ultrices. Pellentesque efficitur quam vitae augue ullamcorper, sit amet bibendum est suscipit. Sed id cursus elit. Fusce et metus nec elit ultrices bibendum. Maecenas dapibus sed nisi vel varius. Vestibulum et risus at nisl vehicula vehicula.',
+          'SMART TV AOC 32 LED HD 32S5135/78 ROKU HDMI USB WI-FI é um modelo da marca AOC. As 32.0" dessa TV HD possui tecnologia LED. A taxa de atualização dessa TV 32S5135/78G é de 60Hz. Quanto ao áudio, a potência deste aparelho é de 10W. A 32S5135/78G conta com as entradas de Fone de Ouvido P2, USB, HDMI, RF, Entrada de Vídeo e Wi-Fi.',
       price: 1091.09,
       payments: 'no Pix ou em 8x de R\$ 149,88 sem juros',
       rating: 3,
@@ -52,7 +52,7 @@ class TvProduct extends Product {
       title:
           'Smart TV 43” 4K LED TCL 43P635 VA Wi-Fi - Bluetooth HDR Google Assistente 3 HDMI 1 USB',
       description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod velit id ex suscipit, a venenatis tellus elementum. Vivamus auctor quam nec justo faucibus, in volutpat augue iaculis. Sed ac dui quis nulla sodales tincidunt. Sed sit amet luctus metus. Sed euismod quam eget lorem sollicitudin, ut pharetra ex ultricies. Aenean gravida velit id odio condimentum, non posuere nisl ultrices. Pellentesque efficitur quam vitae augue ullamcorper, sit amet bibendum est suscipit. Sed id cursus elit. Fusce et metus nec elit ultrices bibendum. Maecenas dapibus sed nisi vel varius. Vestibulum et risus at nisl vehicula vehicula.',
+          'A SMART TV LED 43" TCL 4K HDR 43P635 3 HDMI é um modelo da marca TCL. conta com Google. As 43.0" dessa TV 4K possui tecnologia LED. Os 60Hz de frequência nativa desta TV são responsáveis pela fluidez do vídeo. O som deste aparelho tem a potência de 19W. Esta TV TCL funciona com Wi-Fi integrado e também tem as entradas HDMI 2.1, LAN (Rede), USB.',
       price: 1756.55,
       payments: 'no Pix ou em 10x de R\$ 184,90 sem juros',
       rating: 3,
@@ -64,7 +64,7 @@ class TvProduct extends Product {
       images: ['images/smartTvs/4.png'],
       title: 'Smart TV 32” HD LED Semp R6500 Wi-Fi - 3 HDMI 1 USB',
       description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod velit id ex suscipit, a venenatis tellus elementum. Vivamus auctor quam nec justo faucibus, in volutpat augue iaculis. Sed ac dui quis nulla sodales tincidunt. Sed sit amet luctus metus. Sed euismod quam eget lorem sollicitudin, ut pharetra ex ultricies. Aenean gravida velit id odio condimentum, non posuere nisl ultrices. Pellentesque efficitur quam vitae augue ullamcorper, sit amet bibendum est suscipit. Sed id cursus elit. Fusce et metus nec elit ultrices bibendum. Maecenas dapibus sed nisi vel varius. Vestibulum et risus at nisl vehicula vehicula.',
+          'SMART TV SEMP 32" LED HD ROKU WIFI DUAL BAND 32R6500 é um modelo da marca SEMP. Bivolt, conta com a Roku e comando de voz via dispositivo inteligente compatível. Conta com as entradas Fone de Ouvido P2, HDMI, LAN (Rede), USB, HDMI ARC e também tem Bluetooth, Wi-Fi integrado.',
       price: 1091.09,
       payments: 'no Pix ou em 8x de R\$ 149,88 sem juros',
       rating: 3,
@@ -77,7 +77,7 @@ class TvProduct extends Product {
       title:
           'Smart TV LG 65” 4K Quantum Dot NanoCell 65QNED80 120Hz FreeSync HDMI 2.1 ThinQ',
       description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod velit id ex suscipit, a venenatis tellus elementum. Vivamus auctor quam nec justo faucibus, in volutpat augue iaculis. Sed ac dui quis nulla sodales tincidunt. Sed sit amet luctus metus. Sed euismod quam eget lorem sollicitudin, ut pharetra ex ultricies. Aenean gravida velit id odio condimentum, non posuere nisl ultrices. Pellentesque efficitur quam vitae augue ullamcorper, sit amet bibendum est suscipit. Sed id cursus elit. Fusce et metus nec elit ultrices bibendum. Maecenas dapibus sed nisi vel varius. Vestibulum et risus at nisl vehicula vehicula.',
+          'SMART TV LG 65” 4K QUANTUM DOT NANOCELL 65QNED80 é um modelo da marca LG. As 65.0" dessa TV HD possui tecnologia LED. Os 120Hz de frequência nativa desta TV são responsáveis pela fluidez do vídeo. O som deste aparelho tem a potência de 40W. Conta com as entradas Fone de Ouvido P2, HDMI, LAN (Rede), USB, HDMI ARC e também tem Bluetooth, Wi-Fi integrado.',
       price: 7029.05,
       payments: 'no Pix ou em 10x de R\$ 739,90 sem juros',
       rating: 5,

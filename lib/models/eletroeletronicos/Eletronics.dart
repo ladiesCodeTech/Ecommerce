@@ -26,7 +26,7 @@ class EletronicProduct extends Product {
       images: ['images/eletronics/1.webp'],
       title: 'Babá Eletrônica COMFORT VM85 CONNECT LCD 5.0 Wi-Fi Motorola',
       description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod velit id ex suscipit, a venenatis tellus elementum. Vivamus auctor quam nec justo faucibus, in volutpat augue iaculis. Sed ac dui quis nulla sodales tincidunt. Sed sit amet luctus metus. Sed euismod quam eget lorem sollicitudin, ut pharetra ex ultricies. Aenean gravida velit id odio condimentum, non posuere nisl ultrices. Pellentesque efficitur quam vitae augue ullamcorper, sit amet bibendum est suscipit. Sed id cursus elit. Fusce et metus nec elit ultrices bibendum. Maecenas dapibus sed nisi vel varius. Vestibulum et risus at nisl vehicula vehicula.',
+          'A BABÁ ELETRÔNICA MOTOROLA COMFORT VM85 CONNECT Tem Tela LCD 5.0 com visor colorido, tela LCD 5.0. Conectividade com Alexa e Google Assistant, visualize o seu bebê pelo smartphone e tablet através do aplicativo Motorola. O aparelho tem alcance de até 300 metros, através de Rádio Frequência ou através da tecnologia inovadora com conexão Wi-Fi (Exibição em movimento) e tecnologia sem fio FHSS de 2,4 GHz. Com recurso de comunicação bidirecional, você pode ouvir o seu filho claramente e depois acalmá-lo com sua voz ou até mesmo acionar a função de canções de ninar pré-carregadas com sons naturais e suaves. Produto certificado pela Anatel.',
       price: 1619.10,
       payments: 'No Pix ou no Cartão de crédito R\$ 49.90',
       rating: 5,
@@ -38,7 +38,7 @@ class EletronicProduct extends Product {
       images: ['images/eletronics/2.webp'],
       title: 'Repelente Eletrônico Ultrassônico - Chicco',
       description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod velit id ex suscipit, a venenatis tellus elementum. Vivamus auctor quam nec justo faucibus, in volutpat augue iaculis. Sed ac dui quis nulla sodales tincidunt. Sed sit amet luctus metus. Sed euismod quam eget lorem sollicitudin, ut pharetra ex ultricies. Aenean gravida velit id odio condimentum, non posuere nisl ultrices. Pellentesque efficitur quam vitae augue ullamcorper, sit amet bibendum est suscipit. Sed id cursus elit. Fusce et metus nec elit ultrices bibendum. Maecenas dapibus sed nisi vel varius. Vestibulum et risus at nisl vehicula vehicula.',
+          'O REPELENTE ELETRÔNICO ULTRASSÔNICO CHICCO é um poderoso contra insetos protegendo o seu bebê de picadas de mosquitos. Tecnologia Ultrassônica. Eco-friendly, não solta nenhum agente químico no meio ambiente. Funciona com pilha alcalina AAA com duração média de 100 horas contínuas. Possui prático clip para uso portátil, onde quer que o bebê esteja.',
       price: 48.90,
       payments: 'No Pix ou no Cartão de crédito R\$ 49,90 ',
       rating: 3,
@@ -51,7 +51,7 @@ class EletronicProduct extends Product {
       title:
           'Purificador de água Consul CPB34ASVNA Refrigeração Eletrônica com Filtragem Classe A, Branco Bivolt',
       description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod velit id ex suscipit, a venenatis tellus elementum. Vivamus auctor quam nec justo faucibus, in volutpat augue iaculis. Sed ac dui quis nulla sodales tincidunt. Sed sit amet luctus metus. Sed euismod quam eget lorem sollicitudin, ut pharetra ex ultricies. Aenean gravida velit id odio condimentum, non posuere nisl ultrices. Pellentesque efficitur quam vitae augue ullamcorper, sit amet bibendum est suscipit. Sed id cursus elit. Fusce et metus nec elit ultrices bibendum. Maecenas dapibus sed nisi vel varius. Vestibulum et risus at nisl vehicula vehicula.',
+          'PURIFICADOR DE ÁGUA CONSUL CPB34ASVNA. Água natural e gelada com filtragem classe A, Proteção antibactérias. Refrigeração eletrônica, o que deixa a água gelada até nos dias mais quentes, além de ter design moderno e baixo consumo de energia.',
       price: 499.90,
       payments: 'no Pix ou R\$ 499,90 em 10x de R\$ 49,99 sem juros',
       rating: 4,
@@ -63,7 +63,7 @@ class EletronicProduct extends Product {
       images: ['images/eletronics/4.webp'],
       title: 'Cabo Adaptador OTG Tipo-C Usb C Compatível Samsung Pen Drive',
       description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod velit id ex suscipit, a venenatis tellus elementum. Vivamus auctor quam nec justo faucibus, in volutpat augue iaculis. Sed ac dui quis nulla sodales tincidunt. Sed sit amet luctus metus. Sed euismod quam eget lorem sollicitudin, ut pharetra ex ultricies. Aenean gravida velit id odio condimentum, non posuere nisl ultrices. Pellentesque efficitur quam vitae augue ullamcorper, sit amet bibendum est suscipit. Sed id cursus elit. Fusce et metus nec elit ultrices bibendum. Maecenas dapibus sed nisi vel varius. Vestibulum et risus at nisl vehicula vehicula.',
+          'OTG ADAPTADOR TIPO-C MACHO PARA USB FÊMEA é compatível com dispositivos com entrada "TIPO C". Pode ser usado para conectar dispositivos USB ao seu celular. Como Teclado, Mouse, Controle para Jogos com cabo USB, Impressoras e outros dispositivos USB. Suporta carregamento e transferência de dados. Pode ser usado também como adaptador para o seu cabo USB conectar a uma fonte com saída USB-C (Tipo C). OBS: Este adaptador funciona somente em celulares que suportam a função OTG. Verificar antes, se o seu celular é compatível.',
       price: 8.96,
       payments: 'No Pix e no cartão de crédito',
       rating: 5,
@@ -76,7 +76,7 @@ class EletronicProduct extends Product {
       title:
           'Câmera Baba Eletrônica Visão Noturna sem fio com Microfone 3 Antenas HD - YOUSEE',
       description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod velit id ex suscipit, a venenatis tellus elementum. Vivamus auctor quam nec justo faucibus, in volutpat augue iaculis. Sed ac dui quis nulla sodales tincidunt. Sed sit amet luctus metus. Sed euismod quam eget lorem sollicitudin, ut pharetra ex ultricies. Aenean gravida velit id odio condimentum, non posuere nisl ultrices. Pellentesque efficitur quam vitae augue ullamcorper, sit amet bibendum est suscipit. Sed id cursus elit. Fusce et metus nec elit ultrices bibendum. Maecenas dapibus sed nisi vel varius. Vestibulum et risus at nisl vehicula vehicula.',
+          'CÂMERA SEGURANÇA WIFI IP ROBÔ 3 ANTENAS YOOSEE VISÃO NOTURNA FULL HD 360O MICROFONE ÁUDIO BABÁ ELETRÔNICA BIVOLT, imagem branco e preto, visualize o seu bebê pelo smartphone e tablet independente de exposição a luz. tecnologia inovadora com conexão Wi-Fi. ',
       price: 127.90,
       payments: 'No Pix ou R\$ 127,90 em 2x de R\$ 63,95 sem juros',
       rating: 3,
@@ -89,7 +89,7 @@ class EletronicProduct extends Product {
       title:
           'Esteira Eletrônica Dream Fitness Concept 1600 - Dobrável Vel. Máxima 9km/h',
       description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod velit id ex suscipit, a venenatis tellus elementum. Vivamus auctor quam nec justo faucibus, in volutpat augue iaculis. Sed ac dui quis nulla sodales tincidunt. Sed sit amet luctus metus. Sed euismod quam eget lorem sollicitudin, ut pharetra ex ultricies. Aenean gravida velit id odio condimentum, non posuere nisl ultrices. Pellentesque efficitur quam vitae augue ullamcorper, sit amet bibendum est suscipit. Sed id cursus elit. Fusce et metus nec elit ultrices bibendum. Maecenas dapibus sed nisi vel varius. Vestibulum et risus at nisl vehicula vehicula.',
+          'A ESTEIRA DREAM CONCEPT 1.6 oferece uma forma prática e segura de se exercitar sem sair de casa. Ela conta com 6 funções: tempo, velocidade, distância, calorias, batimentos cardíacos (com ear pulse) e tecla scan. Possui ainda 1 programa de velocidade predefinido, para você montar treinos adequados de acordo com suas necessidades e habilidades. Seja para uma caminhada leve ou uma corrida num ritmo constante, a Esteira Dream oferece conforto e segurança para você, com 3 níveis de inclinação que potencializam o exercício. Além disso, o equipamento é dobrável, facilitando o manuseio e também o armazenamento.',
       price: 1599.90,
       payments: 'no Pix ou R\$ 1.599,90 em 10x de R\$ 159,99 sem juros',
       rating: 5,
