@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:ladiescode/models/ProductsList.dart';
 import 'package:ladiescode/screens/item/components/CustomItemsBody.dart';
 import 'package:ladiescode/screens/item/components/ImageCarosel.dart';
-import 'package:ladiescode/screens/item/components/ItemsInfo.dart';
 
 // construir o corpo da página de cada produto
 class BodyBuilder extends StatelessWidget {
@@ -14,6 +13,7 @@ class BodyBuilder extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: SingleChildScrollView(
+      physics: BouncingScrollPhysics(),
       child: Column(
         children: [
           // imagens do produto
@@ -21,6 +21,7 @@ class BodyBuilder extends StatelessWidget {
           // ItemsInfo(product: product,),
           CustomItemsBody(
             product: product,
+            press: () {},
           ),
         ],
       ),

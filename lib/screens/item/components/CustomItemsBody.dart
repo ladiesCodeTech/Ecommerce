@@ -2,55 +2,20 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:ladiescode/models/ProductsList.dart';
+import 'package:ladiescode/screens/item/ItemScreen.dart';
+import 'package:ladiescode/screens/item/components/CustomExpansionPanel.dart';
 import 'package:ladiescode/size_config.dart';
+import 'package:ladiescode/widgets/ProductCardWidget.dart';
 
 class CustomItemsBody extends StatelessWidget {
   const CustomItemsBody({
     super.key,
     required this.product,
+    required this.press,
   });
 
   final Product product;
-
-  void openDescriptionModal(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: Text("Descrição do produto"),
-          content: Text("Here goes the description of the product."),
-          actions: [
-            TextButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              child: Text("Close"),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  void openRatingModal(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: Text("Avaliação do produto"),
-          content: Text("Here goes the rating section."),
-          actions: [
-            TextButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              child: Text("Close"),
-            ),
-          ],
-        );
-      },
-    );
-  }
+  final VoidCallback press;
 
   @override
   Widget build(BuildContext context) {
@@ -123,11 +88,13 @@ class CustomItemsBody extends StatelessWidget {
                 style: TextStyle(fontSize: 14),
               )),
 
+          // Botão de adicionar ao carrinho
           TextButton.icon(
               onPressed: () {},
               icon: Icon(CupertinoIcons.cart),
               label: Text(
                 'Adicionar ao carrinho',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
               ),
               style: ElevatedButton.styleFrom(
                   backgroundColor: Color(0xFFB6082F),
@@ -140,6 +107,7 @@ class CustomItemsBody extends StatelessWidget {
             height: getProportionateScreenHeight(10),
           ),
 
+          // Botão para página de avaliação do produto
           InkWell(
             onTap: () {},
             child: Container(
@@ -165,6 +133,15 @@ class CustomItemsBody extends StatelessWidget {
             ),
           ),
 
+          SizedBox(
+            height: getProportionateScreenHeight(10),
+          ),
+
+          // Botão para expandir a decrição do produto
+          CustomExpansionPanel(
+            product: product,
+          ),
+
           Container(
             margin: EdgeInsets.only(top: getProportionateScreenHeight(20)),
             width: double.infinity,
@@ -174,115 +151,32 @@ class CustomItemsBody extends StatelessWidget {
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
             ),
           ),
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-                // children: ...List.generate(length, (index) => null),
+
+          GridView.count(
+            childAspectRatio: 0.68,
+            physics: BouncingScrollPhysics(),
+            crossAxisCount: 2,
+            shrinkWrap: true,
+            children: [
+              // Gerar lista de todos os produtos
+              ...List.generate(
+                allProducts.length,
+                (index) => ProductCard(
+                  product: allProducts[index],
+                  press: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ItemScreen(
+                                  product: allProducts[index],
+                                )));
+                  },
                 ),
+              )
+            ],
           )
         ],
       ),
     );
   }
 }
-
-// SizedBox(height: getProportionateScreenHeight(8)),
-//           Text(
-//             'product.price',
-//             style: TextStyle(
-//               fontSize: 18,
-//             ),
-//           ),
-//           Text(
-//             product.payments,
-//             style: TextStyle(
-//               fontSize: 14,
-//             ),
-//           ),
-//           SizedBox(height: 16),
-//           SizedBox(
-//             width: 335,
-//             height: 53,
-//             child: ElevatedButton.icon(
-//               onPressed: () {
-//                 // Perform "Adicionar ao carrinho" action here
-//               },
-//               icon: Icon(Icons.shopping_cart),
-//               label: Text(
-//                 'Adicionar ao carrinho',
-//                 style: TextStyle(
-//                   fontSize: 16,
-//                 ),
-//               ),
-//               style: ElevatedButton.styleFrom(
-//                 primary: Color(0xFFB7082F),
-//                 shape: RoundedRectangleBorder(
-//                   borderRadius: BorderRadius.circular(8),
-//                 ),
-//               ),
-//             ),
-//           ),
-//           SizedBox(height: 16),
-//           SizedBox(
-//             width: 335,
-//             height: 53,
-//             child: ElevatedButton(
-//               onPressed: () {
-//                 openDescriptionModal(context);
-//               },
-//               style: ElevatedButton.styleFrom(
-//                 primary: Colors.white,
-//                 shape: RoundedRectangleBorder(
-//                   borderRadius: BorderRadius.circular(8),
-//                 ),
-//               ),
-//               child: Row(
-//                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//                 children: [
-//                   Text(
-//                     'Descrição do produto',
-//                     style: TextStyle(
-//                       fontSize: 16,
-//                       color: Color.fromARGB(255, 88, 88, 88),
-//                     ),
-//                   ),
-//                   Icon(
-//                     Icons.chevron_right,
-//                     color: Color(0xFFB7082F),
-//                   ),
-//                 ],
-//               ),
-//             ),
-//           ),
-//           SizedBox(height: 16),
-//           SizedBox(
-//             width: 335,
-//             height: 53,
-//             child: ElevatedButton(
-//               onPressed: () {
-//                 openRatingModal(context);
-//               },
-//               style: ElevatedButton.styleFrom(
-//                 primary: Colors.white,
-//                 shape: RoundedRectangleBorder(
-//                   borderRadius: BorderRadius.circular(8),
-//                 ),
-//               ),
-//               child: Row(
-//                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//                 children: [
-//                   Text(
-//                     'Avaliação do produto',
-//                     style: TextStyle(
-//                       fontSize: 16,
-//                       color: Color.fromARGB(255, 88, 88, 88),
-//                     ),
-//                   ),
-//                   Icon(
-//                     Icons.chevron_right,
-//                     color: Color(0xFFB7082F),
-//                   ),
-//                 ],
-//               ),
-//             ),
-//           ),

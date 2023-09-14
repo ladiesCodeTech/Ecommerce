@@ -23,8 +23,13 @@ class ProductCard extends StatelessWidget {
     return GestureDetector(
       onTap: press,
       child: Container(
-        padding: EdgeInsets.only(left: 15, right: 15, top: 10),
-        margin: EdgeInsets.symmetric(vertical: 8, horizontal: 10),
+        padding: EdgeInsets.only(
+            left: getProportionateScreenWidth(15),
+            right: getProportionateScreenWidth(15),
+            top: getProportionateScreenHeight(15)),
+        margin: EdgeInsets.symmetric(
+            vertical: getProportionateScreenHeight(8),
+            horizontal: getProportionateScreenWidth(10)),
         decoration: BoxDecoration(
             color: Colors.white, borderRadius: BorderRadius.circular(20)),
         child: Column(
@@ -36,8 +41,8 @@ class ProductCard extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20),
                 onTap: () {},
                 child: Container(
-                  width: 20,
-                  height: 20,
+                  width: getProportionateScreenWidth(20),
+                  height: getProportionateScreenHeight(20),
                   decoration: BoxDecoration(
                       color: product.isFavourite
                           ? Color(0xFFFFEEED) //true

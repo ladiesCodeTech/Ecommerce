@@ -25,7 +25,8 @@ class SmartphoneProducts extends Product {
     SmartphoneProducts(
       images: ['images/smartphones/1.webp'],
       title: 'Smartphone Xiaomi Note 12S 256GB - 8GB Ram',
-      description: '##Adicionar descrição do produto##',
+      description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod velit id ex suscipit, a venenatis tellus elementum. Vivamus auctor quam nec justo faucibus, in volutpat augue iaculis. Sed ac dui quis nulla sodales tincidunt. Sed sit amet luctus metus. Sed euismod quam eget lorem sollicitudin, ut pharetra ex ultricies. Aenean gravida velit id odio condimentum, non posuere nisl ultrices. Pellentesque efficitur quam vitae augue ullamcorper, sit amet bibendum est suscipit. Sed id cursus elit. Fusce et metus nec elit ultrices bibendum. Maecenas dapibus sed nisi vel varius. Vestibulum et risus at nisl vehicula vehicula.',
       price: 1620.90,
       payments: 'no Pix ou em 10x de R\$ 162,00 sem juros',
       rating: 2,
@@ -36,7 +37,8 @@ class SmartphoneProducts extends Product {
     SmartphoneProducts(
       images: ['images/smartphones/2.webp'],
       title: 'Smartphone Xiaomi Redmi Note 12 128GB - 4GB Ram',
-      description: '##Adicionar descrição do produto##',
+      description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod velit id ex suscipit, a venenatis tellus elementum. Vivamus auctor quam nec justo faucibus, in volutpat augue iaculis. Sed ac dui quis nulla sodales tincidunt. Sed sit amet luctus metus. Sed euismod quam eget lorem sollicitudin, ut pharetra ex ultricies. Aenean gravida velit id odio condimentum, non posuere nisl ultrices. Pellentesque efficitur quam vitae augue ullamcorper, sit amet bibendum est suscipit. Sed id cursus elit. Fusce et metus nec elit ultrices bibendum. Maecenas dapibus sed nisi vel varius. Vestibulum et risus at nisl vehicula vehicula.',
       price: 1380.00,
       payments: 'no Pix ou em 10x de R\$ 138,00 sem juros',
       rating: 3,
@@ -48,7 +50,8 @@ class SmartphoneProducts extends Product {
       images: ['images/smartphones/3.webp'],
       title:
           'Smartphone Samsung Galaxy A54 128GB 5G Octa-Core 8GB RAM 6,4" Câm. Tripla + Selfie 32MP Dual Chip',
-      description: '##Adicionar descrição do produto##',
+      description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod velit id ex suscipit, a venenatis tellus elementum. Vivamus auctor quam nec justo faucibus, in volutpat augue iaculis. Sed ac dui quis nulla sodales tincidunt. Sed sit amet luctus metus. Sed euismod quam eget lorem sollicitudin, ut pharetra ex ultricies. Aenean gravida velit id odio condimentum, non posuere nisl ultrices. Pellentesque efficitur quam vitae augue ullamcorper, sit amet bibendum est suscipit. Sed id cursus elit. Fusce et metus nec elit ultrices bibendum. Maecenas dapibus sed nisi vel varius. Vestibulum et risus at nisl vehicula vehicula.',
       price: 1999.00,
       payments: 'no Pix ou em 10x de R\$ 222,11 sem juros',
       rating: 3,
@@ -59,7 +62,8 @@ class SmartphoneProducts extends Product {
     SmartphoneProducts(
       images: ['images/smartphones/4.webp'],
       title: 'Smartphone Xiaomi Redmi Note 12 128GB - 4GB Ram',
-      description: '##Adicionar descrição do produto##',
+      description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod velit id ex suscipit, a venenatis tellus elementum. Vivamus auctor quam nec justo faucibus, in volutpat augue iaculis. Sed ac dui quis nulla sodales tincidunt. Sed sit amet luctus metus. Sed euismod quam eget lorem sollicitudin, ut pharetra ex ultricies. Aenean gravida velit id odio condimentum, non posuere nisl ultrices. Pellentesque efficitur quam vitae augue ullamcorper, sit amet bibendum est suscipit. Sed id cursus elit. Fusce et metus nec elit ultrices bibendum. Maecenas dapibus sed nisi vel varius. Vestibulum et risus at nisl vehicula vehicula.',
       price: 1380.00,
       payments: 'no Pix ou em 10x de R\$ 138,00 sem juros',
       rating: 3,
@@ -70,7 +74,8 @@ class SmartphoneProducts extends Product {
     SmartphoneProducts(
       images: ['images/smartphones/5.webp'],
       title: 'Smartphone Xiaomi Pocophone Poco X5 5G 128GB 6gb Ram',
-      description: '##Adicionar descrição do produto##',
+      description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod velit id ex suscipit, a venenatis tellus elementum. Vivamus auctor quam nec justo faucibus, in volutpat augue iaculis. Sed ac dui quis nulla sodales tincidunt. Sed sit amet luctus metus. Sed euismod quam eget lorem sollicitudin, ut pharetra ex ultricies. Aenean gravida velit id odio condimentum, non posuere nisl ultrices. Pellentesque efficitur quam vitae augue ullamcorper, sit amet bibendum est suscipit. Sed id cursus elit. Fusce et metus nec elit ultrices bibendum. Maecenas dapibus sed nisi vel varius. Vestibulum et risus at nisl vehicula vehicula.',
       price: 1800.00,
       payments: 'no Pix ou em 10x de R\$ 180,00 sem juros',
       rating: 5,
@@ -81,7 +86,8 @@ class SmartphoneProducts extends Product {
     SmartphoneProducts(
       images: ['images/smartphones/6.webp'],
       title: 'Smartphone Xiaomi Redmi 12C 128GB - 6GB Ram',
-      description: '##Adicionar descrição do produto##',
+      description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod velit id ex suscipit, a venenatis tellus elementum. Vivamus auctor quam nec justo faucibus, in volutpat augue iaculis. Sed ac dui quis nulla sodales tincidunt. Sed sit amet luctus metus. Sed euismod quam eget lorem sollicitudin, ut pharetra ex ultricies. Aenean gravida velit id odio condimentum, non posuere nisl ultrices. Pellentesque efficitur quam vitae augue ullamcorper, sit amet bibendum est suscipit. Sed id cursus elit. Fusce et metus nec elit ultrices bibendum. Maecenas dapibus sed nisi vel varius. Vestibulum et risus at nisl vehicula vehicula.',
       price: 1099.00,
       payments: 'no Pix ou em 10x de R\$ 109,90 sem juros',
       rating: 4,
