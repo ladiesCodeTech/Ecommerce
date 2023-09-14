@@ -1,4 +1,4 @@
-// Modelo de cards que aparecem na lista de produtos
+//Modelo de cards que aparecem na lista de produtos
 import 'package:flutter/material.dart';
 import 'package:ladiescode/models/ProductsList.dart';
 import 'package:ladiescode/size_config.dart';
@@ -19,6 +19,7 @@ class ProductCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     //Permite clicks no container
     return GestureDetector(
       onTap: press,
@@ -34,6 +35,7 @@ class ProductCard extends StatelessWidget {
             color: Colors.white, borderRadius: BorderRadius.circular(20)),
         child: Column(
           children: [
+            
             //Ícone favorito
             Container(
               alignment: Alignment.topRight,
@@ -61,7 +63,7 @@ class ProductCard extends StatelessWidget {
               ),
             ),
 
-            // Imagem do produto
+            //Imagem do produto
             SizedBox(
               width: getProportionateScreenWidth(width),
               child: AspectRatio(
@@ -70,7 +72,7 @@ class ProductCard extends StatelessWidget {
               ),
             ),
 
-            // Título do produto
+            //Título do produto
             Container(
               padding: EdgeInsets.only(bottom: getProportionateScreenHeight(5)),
               alignment: Alignment.centerLeft,
@@ -81,7 +83,7 @@ class ProductCard extends StatelessWidget {
               ),
             ),
 
-            // Preço do produto
+            //Preço do produto
             Container(
               padding: EdgeInsets.only(bottom: getProportionateScreenHeight(3)),
               alignment: Alignment.centerLeft,
@@ -105,7 +107,7 @@ class ProductCard extends StatelessWidget {
               ),
             ),
 
-            // Avaliações dos produtos
+            //Avaliações dos produtos
             Container(
               padding: EdgeInsets.only(bottom: getProportionateScreenHeight(5)),
               alignment: Alignment.centerLeft,

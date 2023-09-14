@@ -1,3 +1,4 @@
+//Página produto, conteúdo da listagem do produto selecionado
 import 'package:flutter/material.dart';
 import 'package:ladiescode/models/ProductsList.dart';
 import 'package:ladiescode/screens/item/components/CustomItemsBody.dart';
@@ -13,18 +14,20 @@ class ItemScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // Appbar - barra de navegação superior
+      
+      //Appbar - barra de navegação superior
       appBar: CustomAppBar(
-        title: '',
+        title: 'Produto',
       ),
 
-      // Body - página de descrição do produto
+      //Body - página de descrição do produto
       body: SafeArea(
           child: SingleChildScrollView(
         physics: BouncingScrollPhysics(),
         child: Column(
           children: [
-            // imagens do produto
+            
+            //Imagens do produto
             ImageCarosel(product: product),
             // ItemsInfo(product: product,),
             CustomItemsBody(
@@ -35,7 +38,7 @@ class ItemScreen extends StatelessWidget {
         ),
       )),
 
-      // NavBar - barra de navegação inferior
+      //NavBar - barra de navegação inferior
       bottomNavigationBar: HomeBottomNavBar(),
     );
   }

@@ -10,6 +10,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xFFF1F1F1),
       appBar: HomeAppBar(),
+      
       //Lista o conteúdo das categorias e todos os produtos
       body: Body(),
 

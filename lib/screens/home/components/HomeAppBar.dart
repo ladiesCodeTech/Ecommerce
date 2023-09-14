@@ -1,4 +1,4 @@
-//Página home, conteúdo da logo, barra de buscar, icone sacola de compras e pesquisar
+//Página home, conteúdo da logo, barra de buscar, icone carrinho de compras
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ladiescode/size_config.dart';
@@ -14,6 +14,7 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
       flexibleSpace: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          
           //Imagem da Logo
           Container(
             padding: EdgeInsets.only(bottom: getProportionateScreenHeight(8)),

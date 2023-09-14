@@ -1,3 +1,4 @@
+//Página produto, conteúdo de toda a página
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
@@ -32,7 +33,8 @@ class CustomItemsBody extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              // Título do produto
+              
+              //Título do produto
               SizedBox(
                 width: screenWidth * 0.6,
                 height: screenHeight * 0.07,
@@ -45,7 +47,7 @@ class CustomItemsBody extends StatelessWidget {
                 ),
               ),
 
-              // Nota da avaliação
+              //Nota da avaliação
               Container(
                 height: screenHeight * 0.07,
                 alignment: Alignment.topRight,
@@ -63,7 +65,7 @@ class CustomItemsBody extends StatelessWidget {
             ],
           ),
 
-          // Preço do produto
+          //Preço do produto
           Container(
             margin: EdgeInsets.only(top: getProportionateScreenHeight(8)),
             width: double.infinity,
@@ -77,7 +79,7 @@ class CustomItemsBody extends StatelessWidget {
             ),
           ),
 
-          // Métodos de pagamento
+          //Formas de pagamento
           Container(
               margin: EdgeInsets.only(
                   top: getProportionateScreenHeight(8),
@@ -88,7 +90,7 @@ class CustomItemsBody extends StatelessWidget {
                 style: TextStyle(fontSize: 14),
               )),
 
-          // Botão de adicionar ao carrinho
+          //Botão de adicionar ao carrinho
           TextButton.icon(
               onPressed: () {},
               icon: Icon(CupertinoIcons.cart),
@@ -107,7 +109,7 @@ class CustomItemsBody extends StatelessWidget {
             height: getProportionateScreenHeight(10),
           ),
 
-          // Botão para página de avaliação do produto
+          //Botão para página de avaliação do produto
           InkWell(
             onTap: () {
               Navigator.pushNamed(context, 'avaliationScreen');
@@ -139,7 +141,7 @@ class CustomItemsBody extends StatelessWidget {
             height: getProportionateScreenHeight(10),
           ),
 
-          // Botão para expandir a decrição do produto
+          //Botão para expandir a decrição do produto
           CustomExpansionPanel(
             product: product,
           ),
@@ -160,7 +162,7 @@ class CustomItemsBody extends StatelessWidget {
             crossAxisCount: 2,
             shrinkWrap: true,
             children: [
-              // Gerar lista de todos os produtos
+              //Gerar lista de todos os produtos
               ...List.generate(
                 allProducts.length,
                 (index) => ProductCard(

@@ -9,9 +9,10 @@ import 'package:ladiescode/widgets/ProductCardWidget.dart';
 class EletronicCatScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: CustomAppBar(title: 'Eletroeletrônicos'),
+
+      //Lista com todos os produtos da categoria
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -22,7 +23,8 @@ class EletronicCatScreen extends StatelessWidget {
                 crossAxisCount: 2,
                 shrinkWrap: true,
                 children: [
-                  // Gerar lista com todos os produtos da categoria eletroeletrônicos
+                  
+                  //Gerar lista com todos os produtos da categoria eletroeletrônicos
                   ...List.generate(
                       eletronicProducts.length,
                       (index) => ProductCard(

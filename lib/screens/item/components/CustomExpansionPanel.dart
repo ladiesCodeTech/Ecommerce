@@ -1,17 +1,7 @@
+//Página produto, conteúdo onde fica a descrição do produto
 import 'package:flutter/material.dart';
 import 'package:ladiescode/models/ProductsList.dart';
 import 'package:ladiescode/size_config.dart';
-
-// class ItemModel {
-//   ItemModel({
-//     required this.headerText,
-//     required this.expandedText,
-//     this.isExpanded = false,
-//   });
-//   String headerText;
-//   String expandedText;
-//   bool isExpanded;
-// }
 
 class CustomExpansionPanel extends StatefulWidget {
   const CustomExpansionPanel({
@@ -51,7 +41,7 @@ class _CustomExpansionPanelState extends State<CustomExpansionPanel> {
               color: _customText ? Colors.black : Colors.black),
         ),
         trailing: Text(
-          _customText ? 'ver menos' : 'ver mais',
+          _customText ? 'Ver menos' : 'Ver mais',
           style: TextStyle(
               color: Color(0xFFB6082F),
               fontWeight: FontWeight.bold,

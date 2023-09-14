@@ -1,3 +1,4 @@
+//Página produto, conteúdo do carrosel das imagens
 import 'package:flutter/material.dart';
 import 'package:ladiescode/models/ProductsList.dart';
 import 'package:ladiescode/size_config.dart';
@@ -21,7 +22,8 @@ class _ImageCaroselState extends State<ImageCarosel> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        // Imagens dos produtos
+       
+        //Imagens dos produtos
         Container(
           padding: EdgeInsets.all(getProportionateScreenWidth(15)),
           width: double.infinity,
@@ -53,7 +55,7 @@ class _ImageCaroselState extends State<ImageCarosel> {
   }
 }
 
-// Classe para construir as bolinhas de navegação da imagem
+//Classe para construir as bolinhas de navegação da imagem
 class DotBuilder extends StatelessWidget {
   const DotBuilder({
     super.key,

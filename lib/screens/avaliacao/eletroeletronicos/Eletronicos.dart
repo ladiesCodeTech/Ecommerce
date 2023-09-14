@@ -1,10 +1,12 @@
+//Tela listagem de avaliações Eletroeletronicos
 import 'package:flutter/material.dart';
 import 'package:ladiescode/widgets/CustomAppBar.dart';
 
 class AvaliationScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // Lista de avaliações
+    
+    //Lista de avaliações
     List<Map<String, dynamic>> reviews = [
       {
         'imagePath': '1.png',
@@ -50,7 +52,7 @@ class AvaliationScreen extends StatelessWidget {
       },
     ];
 
-    // Calculo da média das avaliações
+    //Calculo da média das avaliações
     double averageRating = 0;
     for (var review in reviews) {
       averageRating += review['starRating'];
@@ -58,11 +60,12 @@ class AvaliationScreen extends StatelessWidget {
     if (reviews.isNotEmpty) {
       averageRating /= reviews.length;
     }
-//parte superior tela
 
+    //Parte superior da tela
     return Scaffold(
       appBar: CustomAppBar(title: 'Avaliações'),
-// interface da tela de avaliações
+
+      //Interface da tela de avaliações
       body: Container(
         color: Color(0xFFE7ECF1),
         child: ListView(
@@ -81,7 +84,7 @@ class AvaliationScreen extends StatelessWidget {
     );
   }
 
-// widget que exibe a média das avaliações na tela
+  //Widget que exibe a média das avaliações na tela
   Widget buildAverageRating(double averageRating) {
     return Container(
       margin: EdgeInsets.all(10),
@@ -111,8 +114,8 @@ class AvaliationScreen extends StatelessWidget {
           Row(
             children: [
               Text(
-                averageRating.toStringAsFixed(
-                    1), // Exibir uma média com uma casa decimal
+                averageRating
+                    .toStringAsFixed(1), //Exibir uma média com uma casa decimal
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
@@ -131,7 +134,7 @@ class AvaliationScreen extends StatelessWidget {
     );
   }
 
-// exibe uma caixa de avaliação de produto.
+  //Exibir uma caixa de avaliação de produto
   Widget buildReviewBox(
       String imagePath, String personName, String reviewText, int starRating) {
     return Container(

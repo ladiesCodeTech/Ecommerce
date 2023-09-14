@@ -16,6 +16,7 @@ class HomeBottomNavBar extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
+            
             //Home
             IconButton(
                 onPressed: () {

@@ -9,7 +9,6 @@ import 'package:ladiescode/widgets/ProductCardWidget.dart';
 class SmartphoneCatScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: CustomAppBar(title: 'Smartphones'),
 
@@ -24,7 +23,8 @@ class SmartphoneCatScreen extends StatelessWidget {
                 crossAxisCount: 2,
                 shrinkWrap: true,
                 children: [
-                  // Gerar lista com todos os produtos da categoria Smartphones
+                  
+                  //Gerar lista com todos os produtos da categoria Smartphones
                   ...List.generate(
                       smartphoneProducts.length,
                       (index) => ProductCard(

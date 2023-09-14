@@ -14,7 +14,8 @@ class ItemsWidget extends StatelessWidget {
       crossAxisCount: 2,
       shrinkWrap: true,
       children: [
-        // Gerar lista de todos os produtos
+       
+        //Gerar lista de todos os produtos
         ...List.generate(
           allProducts.length,
           (index) => ProductCard(
