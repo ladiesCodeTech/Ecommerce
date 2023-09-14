@@ -110,7 +110,7 @@ class CustomItemsBody extends StatelessWidget {
           // Botão para página de avaliação do produto
           InkWell(
             onTap: () {
-              Navigator.pushNamed(context, 'categoriesScreen');
+              Navigator.pushNamed(context, 'avaliationScreen');
             },
             child: Container(
               padding: EdgeInsets.symmetric(

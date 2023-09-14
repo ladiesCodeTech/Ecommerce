@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ladiescode/screens/avaliacao/smartTvs/SmartTv.dart';
 import 'package:ladiescode/screens/categorias/CategoriesEletronics.dart';
 import 'package:ladiescode/screens/categorias/CategoriesScreen.dart';
 import 'package:ladiescode/screens/categorias/CategoriesSmartphone.dart';
@@ -6,6 +7,7 @@ import 'package:ladiescode/screens/categorias/CategoriesSmatTv.dart';
 import 'package:ladiescode/screens/favoritos/FavouritesScreen.dart';
 import 'package:ladiescode/screens/home/HomeScreen.dart';
 import 'package:ladiescode/screens/profile/ProfileScreen.dart';
+import 'package:ladiescode/size_config.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,6 +16,8 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Ladies.com',
@@ -32,7 +36,7 @@ class MyApp extends StatelessWidget {
         'categoriesScreen': (context) => CategoriesScreen(),
         'favouriteScreen': (context) => FavouriteScreen(),
         'profileScreen': (context) => ProfileScreen(),
-        'categoriesScreen': (context) => CategoriesScreen(),
+        'avaliationScreen': (context) => AvaliationScreen(),
 
         //Rotas para listar as categorias de produtos
         'tvCatScreen': (context) => TvCatScreen(),

@@ -101,6 +101,7 @@ class ProductCard extends StatelessWidget {
               child: Text(
                 product.payments,
                 style: TextStyle(fontSize: 10, color: Color(0xFF201A1A)),
+                maxLines: 2,
               ),
             ),
 

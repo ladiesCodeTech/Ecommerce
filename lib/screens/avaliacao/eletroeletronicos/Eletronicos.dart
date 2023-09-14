@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:ladiescode/widgets/CustomAppBar.dart';
 
-class CategoriesScreen extends StatelessWidget {
+class AvaliationScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Lista de avaliações
@@ -15,19 +16,22 @@ class CategoriesScreen extends StatelessWidget {
       {
         'imagePath': '2.png',
         'personName': 'Jorge Silva',
-        'reviewText': 'Acertei demais na escolha. Demorou um pouco pra chegar mas foi erro meu pois tinha errado meu endereço. Comprarei aqui mais vezes.',
+        'reviewText':
+            'Acertei demais na escolha. Demorou um pouco pra chegar mas foi erro meu pois tinha errado meu endereço. Comprarei aqui mais vezes.',
         'starRating': 4,
       },
       {
         'imagePath': '3.png',
         'personName': 'Beatriz Diniz',
-        'reviewText': 'Estou encantada com o atendimento. A única coisa que não gostei foi que não avisaram horário de entrega, então o produto voltou pois não tinha ninguém em casa, mas foi logo resolvido.',
+        'reviewText':
+            'Estou encantada com o atendimento. A única coisa que não gostei foi que não avisaram horário de entrega, então o produto voltou pois não tinha ninguém em casa, mas foi logo resolvido.',
         'starRating': 4,
       },
       {
         'imagePath': '4.png',
         'personName': 'Fernanda Alves',
-        'reviewText': 'Gostei do produto, só a cor que na foto é mais bonita que pessoalmente.',
+        'reviewText':
+            'Gostei do produto, só a cor que na foto é mais bonita que pessoalmente.',
         'starRating': 5,
       },
       {
@@ -55,22 +59,9 @@ class CategoriesScreen extends StatelessWidget {
       averageRating /= reviews.length;
     }
 //parte superior tela
+
     return Scaffold(
-      appBar: AppBar(
-        leading: Icon(
-          Icons.arrow_back_ios,  //icone seta
-          color: Color(0xFFB6082F),
-        ),
-        title: Text(
-          'Avaliações',   //titulo página
-          style: TextStyle(
-            fontSize: 23,
-            fontWeight: FontWeight.bold,
-            color: Color(0xFFB6082F),
-          ),
-        ),
-        backgroundColor: Colors.white,
-      ),
+      appBar: CustomAppBar(title: 'Avaliações'),
 // interface da tela de avaliações
       body: Container(
         color: Color(0xFFE7ECF1),
@@ -89,6 +80,7 @@ class CategoriesScreen extends StatelessWidget {
       ),
     );
   }
+
 // widget que exibe a média das avaliações na tela
   Widget buildAverageRating(double averageRating) {
     return Container(
@@ -119,13 +111,14 @@ class CategoriesScreen extends StatelessWidget {
           Row(
             children: [
               Text(
-                averageRating.toStringAsFixed(1), // Exibir uma média com uma casa decimal
+                averageRating.toStringAsFixed(
+                    1), // Exibir uma média com uma casa decimal
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-             //icone de estrela
+              //icone de estrela
               Icon(
                 Icons.star,
                 color: Color(0xFFB6082F),
@@ -137,8 +130,10 @@ class CategoriesScreen extends StatelessWidget {
       ),
     );
   }
-// exibe uma caixa de avaliação de produto. 
-  Widget buildReviewBox(String imagePath, String personName, String reviewText, int starRating) {
+
+// exibe uma caixa de avaliação de produto.
+  Widget buildReviewBox(
+      String imagePath, String personName, String reviewText, int starRating) {
     return Container(
       margin: EdgeInsets.all(10),
       padding: EdgeInsets.all(15),

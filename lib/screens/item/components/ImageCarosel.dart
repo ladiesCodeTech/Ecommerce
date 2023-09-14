@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ladiescode/models/ProductsList.dart';
 import 'package:ladiescode/size_config.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
 class ImageCarosel extends StatefulWidget {
   const ImageCarosel({

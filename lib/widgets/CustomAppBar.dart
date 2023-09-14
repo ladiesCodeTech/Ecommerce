@@ -24,6 +24,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         },
         icon: Icon(Icons.arrow_back_ios),
         color: Color(0xFFB6082F),
+        padding: EdgeInsets.only(left: getProportionateScreenWidth(15)),
       ),
       title: Text(
         title,
@@ -33,6 +34,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         IconButton(
             onPressed: () {},
             icon: Icon(CupertinoIcons.cart),
+            padding: EdgeInsets.only(right: getProportionateScreenWidth(15)),
             color: Color(0xFFB6082F))
       ],
     );

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:ladiescode/widgets/CustomAppBar.dart';
 
-class CategoriesScreen extends StatelessWidget {
+class AvaliationScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Lista de avaliações
@@ -54,21 +55,7 @@ class CategoriesScreen extends StatelessWidget {
     }
 //parte superior tela
     return Scaffold(
-      appBar: AppBar(
-        leading: Icon(
-          Icons.arrow_back_ios, //icone seta
-          color: Color(0xFFB6082F),
-        ),
-        title: Text(
-          'Avaliações', //titulo página
-          style: TextStyle(
-            fontSize: 23,
-            fontWeight: FontWeight.bold,
-            color: Color(0xFFB6082F),
-          ),
-        ),
-        backgroundColor: Colors.white,
-      ),
+      appBar: CustomAppBar(title: 'Avaliações'),
 // interface da tela de avaliações
       body: Container(
         color: Color(0xFFE7ECF1),

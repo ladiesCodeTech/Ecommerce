@@ -2,7 +2,6 @@
 import 'package:flutter/material.dart';
 import 'package:ladiescode/models/ProductsList.dart';
 import 'package:ladiescode/screens/item/ItemScreen.dart';
-import 'package:ladiescode/size_config.dart';
 import 'package:ladiescode/widgets/BottomNavBar.dart';
 import 'package:ladiescode/widgets/CustomAppBar.dart';
 import 'package:ladiescode/widgets/ProductCardWidget.dart';
@@ -10,7 +9,6 @@ import 'package:ladiescode/widgets/ProductCardWidget.dart';
 class EletronicCatScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    SizeConfig().init(context);
 
     return Scaffold(
       appBar: CustomAppBar(title: 'Eletroeletrônicos'),
