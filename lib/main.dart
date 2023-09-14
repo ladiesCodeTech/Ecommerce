@@ -32,8 +32,9 @@ class MyApp extends StatelessWidget {
         'categoriesScreen': (context) => CategoriesScreen(),
         'favouriteScreen': (context) => FavouriteScreen(),
         'profileScreen': (context) => ProfileScreen(),
+        'categoriesScreen': (context) => CategoriesScreen(),
 
-        //Rotas temporárias para listar as categorias de produtos
+        //Rotas para listar as categorias de produtos
         'tvCatScreen': (context) => TvCatScreen(),
         'smartphoneCatScreen': (context) => SmartphoneCatScreen(),
         'eletronicsCatScreen': (context) => EletronicCatScreen(),

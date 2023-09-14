@@ -29,11 +29,12 @@ class _CustomExpansionPanelState extends State<CustomExpansionPanel> {
   bool _customText = false;
   @override
   Widget build(BuildContext context) {
-    return Card(
-      elevation: 0,
+    return Container(
+      width: double.infinity,
       child: ExpansionTile(
         collapsedBackgroundColor: Colors.white,
         backgroundColor: Colors.white,
+
         collapsedShape:
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
