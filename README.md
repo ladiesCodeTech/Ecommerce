@@ -14,7 +14,14 @@ O aplicativo oferece acesso fácil a uma variedade de eletroeletrônicos, smartT
 
 
 
-## Imagens do aplicativo
+## 1 Task Hackadev - Imagens do aplicativo 
+
+* Página Home;
+* Listagem de todos os produtos;
+* Listar 3 categorias principais: (Eletroeletrônicos, SmartTVs e Smartphones);
+* Menu de navegação (Tab Navigation Bottom).
+
+
 <div align="center">
   <img src="assets/imagensAplicativo/home.jpg" alt="Home" width="201.12" />
   <img src="assets/imagensAplicativo/eletoeletronicos.jpg" alt="eletronicos" width="200" />
@@ -22,7 +29,22 @@ O aplicativo oferece acesso fácil a uma variedade de eletroeletrônicos, smartT
   <img src="assets/imagensAplicativo/smartphones.jpg" alt="smartphones" width="202.99" />
 </div>
 
+## 2 Task Hackadev - Imagens do aplicativo 
 
+* Descrição do Produto;
+
+* Valor (pagamento, parcelamento etc);
+
+* Avaliação de Clientes;
+
+* Produtos Recomendados.
+
+
+<div align="center">
+  <img src="assets/imagensAplicativo/produto.jpg" alt="Produto" width="200" />
+  <img src="assets/imagensAplicativo/avaliacoes.jpg" alt="avaliacoes" width="202" />
+  <img src="assets/imagensAplicativo/descricao.jpg" alt="descricao" width="190" />
+</div>
 
 ### Ferramentas utilizadas: 
 
