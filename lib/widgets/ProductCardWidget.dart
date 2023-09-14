@@ -99,6 +99,7 @@ class ProductCard extends StatelessWidget {
               ),
             ),
 
+            // Avaliações dos produtos
             Container(
               padding: EdgeInsets.only(bottom: getProportionateScreenHeight(5)),
               alignment: Alignment.centerLeft,
