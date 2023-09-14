@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ladiescode/models/ProductsList.dart';
-import 'package:ladiescode/screens/item/components/BodyBuilder.dart';
+import 'package:ladiescode/screens/item/components/CustomItemsBody.dart';
+import 'package:ladiescode/screens/item/components/ImageCarosel.dart';
 import 'package:ladiescode/widgets/BottomNavBar.dart';
 import 'package:ladiescode/widgets/CustomAppBar.dart';
 
@@ -18,7 +19,21 @@ class ItemScreen extends StatelessWidget {
       ),
 
       // Body - página de descrição do produto
-      body: BodyBuilder(product: product),
+      body: SafeArea(
+          child: SingleChildScrollView(
+        physics: BouncingScrollPhysics(),
+        child: Column(
+          children: [
+            // imagens do produto
+            ImageCarosel(product: product),
+            // ItemsInfo(product: product,),
+            CustomItemsBody(
+              product: product,
+              press: () {},
+            ),
+          ],
+        ),
+      )),
 
       // NavBar - barra de navegação inferior
       bottomNavigationBar: HomeBottomNavBar(),
