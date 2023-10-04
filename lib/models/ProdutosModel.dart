@@ -1,11 +1,11 @@
-class Produto {
+class ProductModel {
     int id;
     String title;
     String description;
     double price;
     String payments;
 
-    Produto({
+    ProductModel({
         required this.id,
         required this.title,
         required this.description,
@@ -13,8 +13,8 @@ class Produto {
         required this.payments,
     });
 
-    factory Produto.fromJson(Map<String, dynamic> json) {
-    return Produto(
+    factory ProductModel.fromJson(Map<String, dynamic> json) {
+    return ProductModel(
       id: json["id"] ?? 0,
       title: json["title"] ?? "",
       description: json["description"] ?? "",

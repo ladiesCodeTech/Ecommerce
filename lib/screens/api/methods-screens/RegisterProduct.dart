@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'ProductsList.dart';
+import 'package:ladiescode/models/ProdutosModel.dart';
+import 'package:ladiescode/screens/api/ApiMethods.dart';
+import '../../../models/ProductsList.dart';
 
 class RegisterProduct extends StatefulWidget {
   const RegisterProduct({super.key});
@@ -9,11 +11,12 @@ class RegisterProduct extends StatefulWidget {
 }
 
 class _RegisterProductState extends State<RegisterProduct> {
-  Api api = Api();
+  ApiMethods api = ApiMethods();
   String title = "";
   String description = "";
   double price = 0;
   String payments = "";
+  int id = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -66,11 +69,12 @@ class _RegisterProductState extends State<RegisterProduct> {
   }
 
   void salvarPost() async {
-    bool valor = await api.salvarPost(Product(
+    bool valor = await api.postProduct(ProductModel(
       title: title,
       description: description,
       price: price,
       payments: payments,
+      id: id,
     ));
 
     if (valor) {
@@ -84,5 +88,3 @@ class _RegisterProductState extends State<RegisterProduct> {
     ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(msg)));
   }
 }
-
-

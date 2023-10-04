@@ -16,7 +16,6 @@ class HomeBottomNavBar extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            
             //Home
             IconButton(
                 onPressed: () {
@@ -55,7 +54,18 @@ class HomeBottomNavBar extends StatelessWidget {
                 icon: Icon(
                   Icons.person,
                   color: Color(0xFFB6082F),
-                ))
+                )),
+
+            // Retorno API
+            IconButton(
+              onPressed: () {
+                Navigator.pushNamed(context, 'apiScreen');
+              },
+              icon: Icon(
+                Icons.add_business,
+                color: Color(0xFFB6082F),
+              ),
+            )
           ],
         ),
       ),
