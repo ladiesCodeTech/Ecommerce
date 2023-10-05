@@ -55,6 +55,16 @@ class HomeBottomNavBar extends StatelessWidget {
                 icon: Icon(
                   Icons.person,
                   color: Color(0xFFB6082F),
+                )),
+
+                //Perfil
+            IconButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, 'apiScreen');
+                },
+                icon: Icon(
+                  Icons.assignment_add,
+                  color: Color(0xFFB6082F),
                 ))
           ],
         ),

@@ -7,6 +7,7 @@ import 'package:ladiescode/screens/categorias/CategoriesSmatTv.dart';
 import 'package:ladiescode/screens/favoritos/FavouritesScreen.dart';
 import 'package:ladiescode/screens/home/HomeScreen.dart';
 import 'package:ladiescode/screens/profile/ProfileScreen.dart';
+import 'package:ladiescode/screens/api/ApiScreen.dart';
 import 'package:ladiescode/size_config.dart';
 
 void main() {
@@ -37,6 +38,7 @@ class MyApp extends StatelessWidget {
         'favouriteScreen': (context) => FavouriteScreen(),
         'profileScreen': (context) => ProfileScreen(),
         'avaliationScreen': (context) => AvaliationScreen(),
+        'apiScreen': (context) => ApiScreen(),
 
         //Rotas para listar as categorias de produtos
         'tvCatScreen': (context) => TvCatScreen(),

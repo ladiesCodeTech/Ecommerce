@@ -46,6 +46,23 @@ O aplicativo oferece acesso fácil a uma variedade de eletroeletrônicos, smartT
   <img src="assets/imagensAplicativo/descricao.jpg" alt="descricao" width="190" />
 </div>
 
+
+## 3 Task Hackadev - Imagens do aplicativo 
+
+Consumo de API, utilizando o json-server para criar uma API.
+
+* Efetuar o cadastro de produtos;
+* Listar todos os produto;
+* Detalhar um produto através do id (código). Ao clicar em um produto, deverá ser feita uma requisição através do código para retornar todos os dados daquele produto (nome, valor, imagens, fabricante, descrição, comentários, etc…)
+
+<div align="center">
+  <img src="assets/imagensAplicativo/BotãoHome.PNG" alt="BotaoHome" width="200" />
+  <img src="assets/imagensAplicativo/Consumo API.PNG" alt="Consumo API" width="205" />
+  <img src="assets/imagensAplicativo/Alterar Produtos.PNG" alt="Alterar Produtos" width="200" />
+  <img src="assets/imagensAplicativo/Cadastrar Produto.PNG" alt="Cadastrar Produto" width="201" />
+</div>
+
+
 ### Ferramentas utilizadas: 
 
 * Figma
@@ -95,8 +112,6 @@ flutter run
 	    <td align="center" valign="top">  <a href="https://github.com/polysaantana"> <img src="https://avatars.githubusercontent.com/u/138715912?v=4" width="115" alt="Polyanna Santana"/>
           <br /> <p>Polyanna</p> </a>
       </td>
-	<td align="center" valign="top">  <a href="https://github.com/divina37"> <img src="https://media.licdn.com/dms/image/C4E03AQHZKCkTQNWTxQ/profile-displayphoto-shrink_800_800/0/1584478149317?e=1698883200&v=beta&t=6v3F9ccN6hytUW2RP-Z8WZf34_Y1OeDkvteDm9e6Jj8" width="115" alt="Divina"/>
-          <br /> <p>Divina</p> </a>
       </td>
     </tr>
   </tbody>
