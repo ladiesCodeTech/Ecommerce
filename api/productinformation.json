@@ -1,5 +1,5 @@
 {
-    "produtos_eletroeletronicos": [
+    "produtos": [
       {
         "title": "Babá Eletrônica COMFORT VM85 CONNECT LCD 5.0 Wi-Fi Motorola",
         "description": "A BABÁ ELETRÔNICA MOTOROLA COMFORT VM85 CONNECT Tem Tela LCD 5.0 com visor colorido, tela LCD 5.0. Conectividade com Alexa e Google Assistant, visualize o seu bebê pelo smartphone e tablet através do aplicativo Motorola. O aparelho tem alcance de até 300 metros, através de Rádio Frequência ou através da tecnologia inovadora com conexão Wi-Fi (Exibição em movimento) e tecnologia sem fio FHSS de 2,4 GHz. Com recurso de comunicação bidirecional, você pode ouvir o seu filho claramente e depois acalmá-lo com sua voz ou até mesmo acionar a função de canções de ninar pré-carregadas com sons naturais e suaves. Produto certificado pela Anatel.",
@@ -41,9 +41,7 @@
         "price": 1599.90,
         "payments": "no Pix ou em 10x no Cartão de crédito R$ 159,99",
         "id": 6
-      }
-    ],
-    "smartphones": [
+      },
       {
         "title": "Smartphone Xiaomi Note 12S 256GB - 8GB Ram",
         "description": "NOTE 12 S. A Xiaomi traz no Smartphone Xiaomi Redmi Note 12S 8GB Ram 256GB Câmera Tripla o sistema operacional Android. A tela de tecnologia AMOLED conta com 6.43\" em resolução Full HD+. O smartphone possui uma câmera frontal de 16.0 MP e um conjunto de câmeras na parte de trás, cada uma com 108.0 + 8.0 + 2.0 MP. Esse smartphone conta com uma câmera traseira que grava vídeos em Full HD, além de conter as tecnologias Câmera Tripla, Flash, HDR. Este Redmi possui uma bateria com capacidade de 5000mAh. Este Redmi é equipado com o processador Mediatek Helio G96, que tem capacidade de 2.0GHz, 2.05GHz de processamento. Este modelo de celular tem uma memória RAM de 8.0GB.",
@@ -85,9 +83,7 @@
         "price": 1099.00,
         "payments": "no Pix ou em 10x no Cartão de crédito R$ 109,90",
         "id": 6
-      }
-    ],
-    "SmartTV": [
+      },
       {
         "title": "Smart TV LG 55UP7000PSB LED 4K 55\" - Wi-Fi Bluetooth HDR Inteligência Artificial 3 HDMI 2 USB",
         "description": "A Smart TV LG 55UP7000PSB oferece uma experiência visual incrível com qualidade 4K. Ela possui tela LED de 55 polegadas, Wi-Fi integrado, Bluetooth, e é compatível com as principais plataformas de streaming, como Netflix e Amazon Prime Video. A TV também conta com recursos de inteligência artificial, como reconhecimento de voz e controle por movimentos. Além disso, possui 3 entradas HDMI e 2 entradas USB, proporcionando conectividade para diversos dispositivos.",
