@@ -24,7 +24,15 @@ class _AlterarProdutosPageState extends State<AlterarProdutosPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Produto"),
+        iconTheme: const IconThemeData(
+          color: Color(0xFFB7082F),
+        ),
+        backgroundColor: Colors.white,
+        title: const Text(
+          "Alterar Produto",
+          style:
+              TextStyle(color: Color(0xFFB7082F), fontWeight: FontWeight.bold),
+        ),
       ),
       body: Container(
         padding: const EdgeInsets.all(8),
@@ -33,13 +41,23 @@ class _AlterarProdutosPageState extends State<AlterarProdutosPage> {
             TextField(
               controller: TextEditingController(text: product.title),
               decoration: const InputDecoration(label: Text("Titulo")),
-              onChanged: (valor) => product.title = valor,
+              onChanged: (value) => product.title = value,
             ),
             TextField(
               controller: TextEditingController(text: product.description),
               decoration: const InputDecoration(label: Text("Descrição")),
               maxLines: 5,
-              onChanged: (valor) => product.description= valor,
+              onChanged: (value) => product.description = value,
+            ),
+            TextField(
+              controller: TextEditingController(text: product.price.toString()),
+              decoration: const InputDecoration(label: Text("Preço")),
+              onChanged: (value) => product.price = double.parse(value),
+            ),
+            TextField(
+              controller: TextEditingController(text: product.payments),
+              decoration: const InputDecoration(label: Text("Pagamentos")),
+              onChanged: (value) => product.payments = value,
             ),
             SizedBox(
               width: double.infinity,
@@ -47,6 +65,8 @@ class _AlterarProdutosPageState extends State<AlterarProdutosPage> {
                   onPressed: () {
                     alterarProduto();
                   },
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Color(0xFFB7082F)),
                   child: const Text("Alterar Produto")),
             )
           ],
@@ -56,9 +76,9 @@ class _AlterarProdutosPageState extends State<AlterarProdutosPage> {
   }
 
   void alterarProduto() async {
-    bool valor = await api.putProduct(product);
+    bool value = await api.putProduct(product);
 
-    if (valor) {
+    if (value) {
       showSnackBar("Produto Alterado!");
     } else {
       showSnackBar("Falha ao alterar Produto!");

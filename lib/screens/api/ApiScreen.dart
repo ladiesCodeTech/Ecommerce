@@ -44,7 +44,7 @@ class _ApiScreenState extends State<ApiScreen> {
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (_) => RegisterProduct()));
               },
-              icon: Icon(Icons.add_box_outlined),
+              icon: Icon(Icons.post_add),
               padding: EdgeInsets.only(right: getProportionateScreenWidth(15)),
               color: Color(0xFFB6082F))
         ],

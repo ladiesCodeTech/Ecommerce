@@ -22,8 +22,20 @@ class _RegisterProductState extends State<RegisterProduct> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Cadastro de  Produtos"),
-        backgroundColor: const Color(0xFFB7082F),
+        iconTheme: const IconThemeData(
+          color: Color(0xFFB7082F),
+        ),
+        backgroundColor: Colors.white,
+        centerTitle: true,
+        title: const Center(
+          child: Text(
+            "Cadastrar Produtos",
+            style: TextStyle(
+              color: Color(0xFFB7082F),
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
       ),
       body: Container(
         padding: const EdgeInsets.all(8),
