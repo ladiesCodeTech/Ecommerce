@@ -49,7 +49,7 @@ class _CadastrarProdutoState extends State<CadastrarProduto> {
             },
             icon: Icon(
               Icons.post_add,
-              color: Color(0xFFB6082F), // Cor desejada para o ícone
+              color: Color(0xFFB6082F),
             ),
           )
         ],

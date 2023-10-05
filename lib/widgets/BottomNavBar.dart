@@ -57,7 +57,7 @@ class HomeBottomNavBar extends StatelessWidget {
                   color: Color(0xFFB6082F),
                 )),
 
-                //Perfil
+                //Consumo API
             IconButton(
                 onPressed: () {
                   Navigator.pushNamed(context, 'apiScreen');
