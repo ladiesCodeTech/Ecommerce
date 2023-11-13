@@ -1,6 +1,9 @@
-//Página produto, conteúdo do carrosel das imagens
+// Página produto, conteúdo do carrosel das imagens
+
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:ladiescode/models/ProductsList.dart';
+import 'package:ladiescode/models/database/ProdutosModel.dart';
+import 'package:ladiescode/models/database/Requisicoes.dart';
 import 'package:ladiescode/size_config.dart';
 
 class ImageCarosel extends StatefulWidget {
@@ -9,20 +12,27 @@ class ImageCarosel extends StatefulWidget {
     required this.product,
   });
 
-  final Product product;
+  final ProdutosModel product;
 
   @override
   State<ImageCarosel> createState() => _ImageCaroselState();
 }
 
 class _ImageCaroselState extends State<ImageCarosel> {
+  Api api = Api();
+  late ProdutosModel product;
   int _currentPage = 0;
+
+  @override
+  void initState() {
+    product = widget.product;
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-       
         //Imagens dos produtos
         Container(
           padding: EdgeInsets.all(getProportionateScreenWidth(15)),
@@ -31,16 +41,18 @@ class _ImageCaroselState extends State<ImageCarosel> {
           child: SizedBox(
             height: getProportionateScreenHeight(200),
             child: AspectRatio(
-                aspectRatio: 1,
-                child: PageView.builder(
-                    itemCount: widget.product.images.length,
-                    onPageChanged: (value) {
-                      setState(() {
-                        _currentPage = value;
-                      });
-                    },
-                    itemBuilder: (context, index) =>
-                        Image.asset(widget.product.images[index]))),
+              aspectRatio: 1,
+              child: PageView.builder(
+                  itemCount: 1,
+                  onPageChanged: (value) {
+                    setState(() {
+                      _currentPage = value;
+                    });
+                  },
+                  itemBuilder: (context, index) => CachedNetworkImage(
+                        imageUrl: product.image ?? "",
+                      )),
+            ),
           ),
         ),
         Padding(
@@ -48,14 +60,14 @@ class _ImageCaroselState extends State<ImageCarosel> {
         ),
         Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: List.generate(widget.product.images.length,
-                (index) => DotBuilder(isActive: index == _currentPage))),
+            children: List.generate(
+                1, (index) => DotBuilder(isActive: index == _currentPage))),
       ],
     );
   }
 }
 
-//Classe para construir as bolinhas de navegação da imagem
+// Classe para construir as bolinhas de navegação da imagem
 class DotBuilder extends StatelessWidget {
   const DotBuilder({
     super.key,

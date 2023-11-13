@@ -1,4 +1,5 @@
-//Página home, icones da barra de navegação parte inferior.
+// Página home, icones da barra de navegação parte inferior.
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ladiescode/size_config.dart';
@@ -16,8 +17,7 @@ class HomeBottomNavBar extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            
-            //Home
+            // Home
             IconButton(
                 onPressed: () {
                   Navigator.pushNamed(context, '/');
@@ -27,7 +27,7 @@ class HomeBottomNavBar extends StatelessWidget {
                   color: Color(0xFFB6082F),
                 )),
 
-            //Categorias
+            // Categorias
             IconButton(
                 onPressed: () {
                   Navigator.pushNamed(context, 'categoriesScreen');
@@ -37,7 +37,7 @@ class HomeBottomNavBar extends StatelessWidget {
                   color: Color(0xFFB6082F),
                 )),
 
-            //Favoritos
+            // Favoritos
             IconButton(
                 onPressed: () {
                   Navigator.pushNamed(context, 'favouriteScreen');
@@ -47,7 +47,7 @@ class HomeBottomNavBar extends StatelessWidget {
                   color: Color(0xFFB6082F),
                 )),
 
-            //Perfil
+            // Perfil
             IconButton(
                 onPressed: () {
                   Navigator.pushNamed(context, 'profileScreen');
@@ -57,10 +57,10 @@ class HomeBottomNavBar extends StatelessWidget {
                   color: Color(0xFFB6082F),
                 )),
 
-                //Consumo API
+            // configuração produtos
             IconButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, 'apiScreen');
+                  Navigator.pushNamed(context, 'listarProdutos');
                 },
                 icon: Icon(
                   Icons.assignment_add,

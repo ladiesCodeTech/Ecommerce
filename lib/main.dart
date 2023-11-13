@@ -7,7 +7,7 @@ import 'package:ladiescode/screens/categorias/CategoriesSmatTv.dart';
 import 'package:ladiescode/screens/favoritos/FavouritesScreen.dart';
 import 'package:ladiescode/screens/home/HomeScreen.dart';
 import 'package:ladiescode/screens/profile/ProfileScreen.dart';
-import 'package:ladiescode/screens/api/ApiScreen.dart';
+import 'package:ladiescode/models/database/ListarProdutos.dart';
 import 'package:ladiescode/size_config.dart';
 
 void main() {
@@ -31,16 +31,16 @@ class MyApp extends StatelessWidget {
             bodyLarge: TextStyle(color: Color(0xFF201A1A)),
           )),
 
-      //Rotas das páginas
+      // Rotas das páginas
       routes: {
         '/': (context) => HomeScreen(),
         'categoriesScreen': (context) => CategoriesScreen(),
         'favouriteScreen': (context) => FavouriteScreen(),
         'profileScreen': (context) => ProfileScreen(),
         'avaliationScreen': (context) => AvaliationScreen(),
-        'apiScreen': (context) => ApiScreen(),
+        'listarProdutos': (context) => ListarProdutos(),
 
-        //Rotas para listar as categorias de produtos
+        // Rotas para listar as categorias de produtos
         'tvCatScreen': (context) => TvCatScreen(),
         'smartphoneCatScreen': (context) => SmartphoneCatScreen(),
         'eletronicsCatScreen': (context) => EletronicCatScreen(),

@@ -1,22 +1,36 @@
-//Página produto, conteúdo de toda a página
+// Página produto, conteúdo de toda a página
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:ladiescode/models/ProductsList.dart';
-import 'package:ladiescode/screens/item/ItemScreen.dart';
+import 'package:ladiescode/models/database/ProdutosModel.dart';
+import 'package:ladiescode/models/database/Requisicoes.dart';
 import 'package:ladiescode/screens/item/components/CustomExpansionPanel.dart';
 import 'package:ladiescode/size_config.dart';
-import 'package:ladiescode/widgets/ProductCardWidget.dart';
 
-class CustomItemsBody extends StatelessWidget {
+class CustomItemsBody extends StatefulWidget {
   const CustomItemsBody({
     super.key,
     required this.product,
     required this.press,
   });
 
-  final Product product;
+  final ProdutosModel product;
   final VoidCallback press;
+
+  @override
+  State<CustomItemsBody> createState() => _CustomItemsBodyState();
+}
+
+class _CustomItemsBodyState extends State<CustomItemsBody> {
+  Api api = Api();
+  late ProdutosModel product;
+
+  @override
+  void initState() {
+    product = widget.product;
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -33,13 +47,12 @@ class CustomItemsBody extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              
-              //Título do produto
+              // Título do produto
               SizedBox(
                 width: screenWidth * 0.6,
-                height: screenHeight * 0.07,
+                height: screenHeight * 0.10,
                 child: Text(
-                  product.title,
+                  product.title ?? "",
                   maxLines: 3,
                   style: TextStyle(
                     fontSize: 16,
@@ -47,12 +60,11 @@ class CustomItemsBody extends StatelessWidget {
                 ),
               ),
 
-              //Nota da avaliação
+              // Nota da avaliação
               Container(
                 height: screenHeight * 0.07,
                 alignment: Alignment.topRight,
                 child: RatingBarIndicator(
-                  rating: product.rating,
                   itemBuilder: (context, index) => Icon(
                     Icons.star,
                     color: Color(0xFFB6082F),
@@ -65,12 +77,12 @@ class CustomItemsBody extends StatelessWidget {
             ],
           ),
 
-          //Preço do produto
+          // Preço do produto
           Container(
             margin: EdgeInsets.only(top: getProportionateScreenHeight(8)),
             width: double.infinity,
             child: Text(
-              'R\$ ${product.price.toStringAsFixed(2)}',
+              'R\$ ${product.price?.toStringAsFixed(2) ?? ""}',
               textAlign: TextAlign.left,
               style: TextStyle(
                 fontSize: 20,
@@ -79,18 +91,18 @@ class CustomItemsBody extends StatelessWidget {
             ),
           ),
 
-          //Formas de pagamento
+          // Formas de pagamento
           Container(
               margin: EdgeInsets.only(
                   top: getProportionateScreenHeight(8),
                   bottom: getProportionateScreenHeight(15)),
               width: double.infinity,
               child: Text(
-                product.payments,
+                product.payments ?? "",
                 style: TextStyle(fontSize: 14),
               )),
 
-          //Botão de adicionar ao carrinho
+          // Botão de adicionar ao carrinho
           TextButton.icon(
               onPressed: () {},
               icon: Icon(CupertinoIcons.cart),
@@ -109,7 +121,7 @@ class CustomItemsBody extends StatelessWidget {
             height: getProportionateScreenHeight(10),
           ),
 
-          //Botão para página de avaliação do produto
+          // Botão para página de avaliação do produto
           InkWell(
             onTap: () {
               Navigator.pushNamed(context, 'avaliationScreen');
@@ -155,30 +167,6 @@ class CustomItemsBody extends StatelessWidget {
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
             ),
           ),
-
-          GridView.count(
-            childAspectRatio: 0.68,
-            physics: BouncingScrollPhysics(),
-            crossAxisCount: 2,
-            shrinkWrap: true,
-            children: [
-              //Gerar lista de todos os produtos
-              ...List.generate(
-                allProducts.length,
-                (index) => ProductCard(
-                  product: allProducts[index],
-                  press: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => ItemScreen(
-                                  product: allProducts[index],
-                                )));
-                  },
-                ),
-              )
-            ],
-          )
         ],
       ),
     );

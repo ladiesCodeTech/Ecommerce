@@ -1,4 +1,5 @@
-//Página perfil do usuario
+// Página perfil do usuario
+
 import 'package:flutter/material.dart';
 import 'package:ladiescode/widgets/BottomNavBar.dart';
 import 'package:ladiescode/widgets/CustomAppBar.dart';

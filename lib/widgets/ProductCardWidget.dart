@@ -1,6 +1,7 @@
-//Modelo de cards que aparecem na lista de produtos
+// Modelo de cards que aparecem na lista de produtos
+
 import 'package:flutter/material.dart';
-import 'package:ladiescode/models/ProductsList.dart';
+import 'package:ladiescode/models/database/ProdutosModel.dart';
 import 'package:ladiescode/size_config.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
@@ -14,12 +15,11 @@ class ProductCard extends StatelessWidget {
   });
 
   final double width, aspectRatio;
-  final Product product;
+  final ProdutosModel product;
   final VoidCallback press;
 
   @override
   Widget build(BuildContext context) {
-    
     //Permite clicks no container
     return GestureDetector(
       onTap: press,
@@ -35,7 +35,6 @@ class ProductCard extends StatelessWidget {
             color: Colors.white, borderRadius: BorderRadius.circular(20)),
         child: Column(
           children: [
-            
             //Ícone favorito
             Container(
               alignment: Alignment.topRight,
@@ -63,32 +62,32 @@ class ProductCard extends StatelessWidget {
               ),
             ),
 
-            //Imagem do produto
+            // Imagem do produto
             SizedBox(
               width: getProportionateScreenWidth(width),
               child: AspectRatio(
                 aspectRatio: aspectRatio,
-                child: Image.asset(product.images[0]),
+                child: Image.network(product.image ?? ""),
               ),
             ),
 
-            //Título do produto
+            // Título do produto
             Container(
               padding: EdgeInsets.only(bottom: getProportionateScreenHeight(5)),
               alignment: Alignment.centerLeft,
               child: Text(
-                product.title,
+                product.title ?? "",
                 style: TextStyle(fontSize: 12, color: Color(0xFF201A1A)),
                 maxLines: 2,
               ),
             ),
 
-            //Preço do produto
+            // Preço do produto
             Container(
               padding: EdgeInsets.only(bottom: getProportionateScreenHeight(3)),
               alignment: Alignment.centerLeft,
               child: Text(
-                'R\$ ${product.price.toStringAsFixed(2)}',
+                'R\$ ${product.price?.toStringAsFixed(2) ?? ""}',
                 style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
@@ -96,18 +95,18 @@ class ProductCard extends StatelessWidget {
               ),
             ),
 
-            //Formas de Pagamento do produto
+            // Formas de Pagamento do produto
             Container(
               padding: EdgeInsets.only(bottom: getProportionateScreenHeight(5)),
               alignment: Alignment.centerLeft,
               child: Text(
-                product.payments,
+                product.payments ?? "",
                 style: TextStyle(fontSize: 10, color: Color(0xFF201A1A)),
                 maxLines: 2,
               ),
             ),
 
-            //Avaliações dos produtos
+            // Avaliações dos produtos
             Container(
               padding: EdgeInsets.only(bottom: getProportionateScreenHeight(5)),
               alignment: Alignment.centerLeft,

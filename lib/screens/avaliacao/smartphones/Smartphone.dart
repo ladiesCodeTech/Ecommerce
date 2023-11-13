@@ -1,12 +1,12 @@
-//Tela listagem de avaliações Smartphone
+// Tela listagem de avaliações Smartphone
+
 import 'package:flutter/material.dart';
 import 'package:ladiescode/widgets/CustomAppBar.dart';
 
 class AvaliationScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    
-    //Lista de avaliações
+    // Lista de avaliações
     List<Map<String, dynamic>> reviews = [
       {
         'imagePath': '7.png',
@@ -48,7 +48,7 @@ class AvaliationScreen extends StatelessWidget {
       },
     ];
 
-    //Calculo da média das avaliações
+    // Calculo da média das avaliações
     double averageRating = 0;
     for (var review in reviews) {
       averageRating += review['starRating'];
@@ -57,7 +57,7 @@ class AvaliationScreen extends StatelessWidget {
       averageRating /= reviews.length;
     }
 
-    //Parte superior da tela
+    // Parte superior da tela
     return Scaffold(
       appBar: CustomAppBar(title: 'Avaliações'),
 
@@ -80,7 +80,7 @@ class AvaliationScreen extends StatelessWidget {
     );
   }
 
-  //Widget que exibe a média das avaliações na tela
+  // Widget que exibe a média das avaliações na tela
   Widget buildAverageRating(double averageRating) {
     return Container(
       margin: EdgeInsets.all(10),
@@ -130,7 +130,7 @@ class AvaliationScreen extends StatelessWidget {
     );
   }
 
-//Exibir uma caixa de avaliação de produto
+// Exibir uma caixa de avaliação de produto
   Widget buildReviewBox(
       String imagePath, String personName, String reviewText, int starRating) {
     return Container(

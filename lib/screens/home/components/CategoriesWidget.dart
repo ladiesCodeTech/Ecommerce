@@ -1,4 +1,5 @@
-//Listagem das categorias da página home
+// Listagem das categorias da página home
+
 import 'package:flutter/material.dart';
 import 'package:ladiescode/size_config.dart';
 

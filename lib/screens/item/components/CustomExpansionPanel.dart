@@ -1,6 +1,8 @@
-//Página produto, conteúdo onde fica a descrição do produto
+// Página produto, conteúdo onde fica a descrição do produto
+
 import 'package:flutter/material.dart';
-import 'package:ladiescode/models/ProductsList.dart';
+import 'package:ladiescode/models/database/ProdutosModel.dart';
+import 'package:ladiescode/models/database/Requisicoes.dart';
 import 'package:ladiescode/size_config.dart';
 
 class CustomExpansionPanel extends StatefulWidget {
@@ -9,13 +11,22 @@ class CustomExpansionPanel extends StatefulWidget {
     required this.product,
   });
 
-  final Product product;
+  final ProdutosModel product;
 
   @override
   State<CustomExpansionPanel> createState() => _CustomExpansionPanelState();
 }
 
 class _CustomExpansionPanelState extends State<CustomExpansionPanel> {
+  Api api = Api();
+  late ProdutosModel product;
+
+  @override
+  void initState() {
+    product = widget.product;
+    super.initState();
+  }
+
   bool _customText = false;
   @override
   Widget build(BuildContext context) {
@@ -50,7 +61,7 @@ class _CustomExpansionPanelState extends State<CustomExpansionPanel> {
         // Icon(_customIcon ? Icons.arrow_drop_up : Icons.arrow_drop_down),
         children: [
           ListTile(
-            title: Text(widget.product.description),
+            title: Text(product.description ?? ""),
           )
         ],
         onExpansionChanged: (bool expanded) {

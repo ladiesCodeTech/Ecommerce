@@ -1,4 +1,5 @@
-//Conteúdo para responsivo
+// Conteúdo para responsivo
+
 import 'package:flutter/material.dart';
 
 class SizeConfig {

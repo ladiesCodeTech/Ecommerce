@@ -1,4 +1,5 @@
-//Layout das páginas
+// Layout das páginas
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ladiescode/size_config.dart';
@@ -9,7 +10,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     required this.title,
   });
 
-  final title;
+  final String title;
 
   @override
   Size get preferredSize => Size.fromHeight(getProportionateScreenHeight(50));
